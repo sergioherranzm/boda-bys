@@ -1,0 +1,37 @@
+Se necesita un servidor con windows 10.
+
+1. (paso obsoleto)Si se usa IE, desabilitar boton edge
+
+2. Instalar winrar, python
+  2.1. Instalar modulos de dependencias de python
+
+3. Instalar chrome (asegurarse de que el chrome webdriver es compatible con la version de chrome)
+  3.1. Recomendado desactivar actualizaciones. https://www.softzone.es/programas-top/chrome/como-desactivar-actualizaciones-automaticas-chrome/
+	https://www.webnots.com/7-ways-to-disable-automatic-chrome-update-in-windows-and-mac/
+
+4. Instalar office 2016 (si puede ser sin One Drive para evitar punto 8.)
+
+5. Instalar outlook
+
+6. Habilitar en regedit la automatizacion de correos en outlook (descargado en PDF)
+http://help.nice-automation.com/content/topics/allowprogrammaticaccessoutlook.htm
+
+7. Configurar energias para que no se apague nada del servidor (solo la pantalla)
+
+8. Deshabilitar inicio de servicios innecesarios en el administrador de tareas
+
+9. Configurar el .bat de inicio de la app metiéndolo en:
+    X:\Users\<nombre_de_usuario>\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
+
+  9.1. Colocar los .bat de shutdown y sleep
+
+10. Configurar la BIOS del servidor para que arranque solo a XX:XX (esta hora debe ser igual o posterior a la de inicio más temprana que se indique en el fichero de config.properties)
+    Nota: no desenchufar nunca la corriente del servidor. Si se hace no se volverá a iniciar solo y requerira de un inicio manual para que puede volver al ciclo de iniciarse por BIOS.
+
+11. Si se tienen varias horas distintas de inicio de la app dependiendo el dia de la semana, entonces será necesario crear tareas en el Programando de tareas de windows para que el servidor despierte a esas horas de la suspension
+  11.1. Habrá que crear una tarea por cada hora distinta de la más temprana
+  11.2. Abrir el Programador de tareas/Crear tarea.../
+  11.3. En General: Nombre, Ejecutar con privilegios mas altos
+  11.4. En Desencadenadores: Diariamente a la hora de inicio de la app + 1min
+  11.5. En Acciones: Iniciar un programa,Programa: cmd.exe, Argumentos: /c "exit"
+  11.6. En Condiciones: Activar el equipo
