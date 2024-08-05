@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import useSWR from 'swr';
 import { AnimatePresence, motion } from 'framer-motion';
-import { useUser, withPageAuthRequired } from '@auth0/nextjs-auth0';
 import { Button } from '../components/shared/Button';
 import { useState } from 'react';
 import { useRouter } from 'next/router';
@@ -12,8 +11,6 @@ const Page = () => {
   const {
     query: { createdReserve, deletedReserve },
   } = router;
-
-  const { user } = useUser();
 
   const [searchedActivity, setSearchedActivity] = useState<
     string | undefined
@@ -111,13 +108,7 @@ const Page = () => {
                       initial={{ opacity: 0 }}
                       transition={{ delay: 0.28 }}
                       tw="flex flex-col items-center"
-                    >
-                      <Link
-                        href={`/api/reserves/create?ActivityID=${activity.Activity_ID}&User=${user?.email}`}
-                      >
-                        <Button variant="neutral">Add reserve</Button>
-                      </Link>
-                    </motion.div>
+                    ></motion.div>
                   </motion.div>
                 );
               }
@@ -137,4 +128,4 @@ const Page = () => {
   );
 };
 
-export default withPageAuthRequired(Page);
+export default Page;

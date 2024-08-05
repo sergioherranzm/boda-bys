@@ -2,7 +2,6 @@ import Link from 'next/link';
 import useSWR from 'swr';
 import { AnimatePresence, motion } from 'framer-motion';
 import { Alert } from '@mui/material';
-import { useUser, withPageAuthRequired } from '@auth0/nextjs-auth0';
 import { Button } from '../../components/shared/Button';
 import { useState } from 'react';
 import { useRouter } from 'next/router';
@@ -13,10 +12,6 @@ const Page = () => {
   const {
     query: { createdReserve, deletedReserve },
   } = router;
-  const { user } = useUser();
-  const { data: reserveData } = useSWR(
-    user?.email ? `/reserves/list?User=${user?.email}` : null
-  );
 
   const [selectedActivity, setSelectedActivity] = useState<
     string | undefined
@@ -39,9 +34,9 @@ const Page = () => {
             </p>
           </Alert>
         )}
-        {reserveData?.data?.length > 0 && (
+        {0 > 0 && (
           <div tw="container my-1 p-1 border border-primary-200 shadow-sm rounded-lg grid grid-cols-1 gap-y-2">
-            {reserveData?.data?.map((reserve, i) => {
+            {[].map((reserve, i) => {
               if (
                 reserve.Related_Activity_ID?.Activity_ID != selectedActivity
               ) {
@@ -179,12 +174,7 @@ const Page = () => {
             })}
           </div>
         )}
-        {reserveData && reserveData?.data?.length === 0 && (
-          <div tw="text-secondary-400 font-medium my-3">
-            You have no reserves yet
-          </div>
-        )}
-        {!reserveData && (
+        {true && (
           <div tw="flex flex-col justify-center items-center gap-2">
             <div tw="text-secondary-400 font-medium my-3">
               Loading reserves...
@@ -197,4 +187,4 @@ const Page = () => {
   );
 };
 
-export default withPageAuthRequired(Page);
+export default Page;

@@ -1,5 +1,4 @@
 import useSWR from 'swr';
-import { withPageAuthRequired } from '@auth0/nextjs-auth0';
 import { ActivityList } from '../components/ActivityList';
 import { useEffect, useState } from 'react';
 import { RiArrowLeftCircleFill, RiArrowRightCircleFill } from 'react-icons/ri';
@@ -70,4 +69,4 @@ const Page = () => {
   );
 };
 
-export default withPageAuthRequired(Page);
+export default Page;

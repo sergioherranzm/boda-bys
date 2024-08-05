@@ -3,29 +3,12 @@ import useSWR from 'swr';
 import { Button } from './shared/Button';
 import { GridLoader } from 'react-spinners';
 import { AnimatePresence, motion } from 'framer-motion';
-import { useUser } from '@auth0/nextjs-auth0';
 import { useState } from 'react';
 
 export const ActivityList = ({ selectedDay }) => {
-  const { user } = useUser();
   const { data: activityData } = useSWR(
     `/activities/listByDay?selectedDay=${selectedDay}`
   );
-  const { data: reserveData } = useSWR(
-    user?.email ? `/reserves/list?User=${user?.email}` : null
-  );
-  const idArray = reserveData?.data
-    ? reserveData?.data?.map((reser) => reser.Activity_ID)
-    : null;
-  const statusArray = reserveData?.data
-    ? reserveData?.data?.map(function (reser) {
-        if (reser.Reserve_Status != '') {
-          return reser.Reserve_Status;
-        } else {
-          return 'PENDING...';
-        }
-      })
-    : null;
 
   const [selectedActivity, setSelectedActivity] = useState<
     string | undefined
@@ -58,13 +41,6 @@ export const ActivityList = ({ selectedDay }) => {
                         <p tw="inline text-sm"> - {activity.Monitor}</p>
                       )}
                     </div>
-                    <div>
-                      {idArray?.includes(activity.Activity_ID) && (
-                        <p tw="text-xl font-black border-2 rounded-lg p-1 border-black">
-                          {statusArray[idArray.indexOf(activity.Activity_ID)]}
-                        </p>
-                      )}
-                    </div>
                   </motion.div>
                 );
               }
@@ -92,33 +68,13 @@ export const ActivityList = ({ selectedDay }) => {
                           <p tw="inline text-sm">{activity.Room}</p>
                         )}
                       </div>
-                      <div>
-                        {idArray?.includes(activity.Activity_ID) && (
-                          <p tw="text-xl font-black border-2 rounded-lg p-1 border-black">
-                            {statusArray[idArray.indexOf(activity.Activity_ID)]}
-                          </p>
-                        )}
-                      </div>
                     </div>
                     <motion.div
                       animate={{ opacity: 1 }}
                       initial={{ opacity: 0 }}
                       transition={{ delay: 0.28 }}
                       tw="flex flex-col items-center"
-                    >
-                      {!idArray?.includes(activity.Activity_ID) && (
-                        <Link
-                          href={`/api/reserves/create?ActivityID=${activity.Activity_ID}&User=${user?.email}`}
-                        >
-                          <Button variant="neutral">Add reserve</Button>
-                        </Link>
-                      )}
-                      {idArray?.includes(activity.Activity_ID) && (
-                        <a href="/reserves/list">
-                          <Button variant="neutral">View reserves</Button>
-                        </a>
-                      )}
-                    </motion.div>
+                    ></motion.div>
                   </motion.div>
                 );
               }
