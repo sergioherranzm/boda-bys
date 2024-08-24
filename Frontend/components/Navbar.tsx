@@ -5,8 +5,8 @@ export const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   return (
-    <div tw="flex items-center border-b border-gray-400 py-8 px-8">
-      <nav tw="w-full">
+    <div tw="flex items-center border-b border-gray-400 py-4 px-4 w-screen">
+      <nav tw="w-screen">
         <section tw="flex items-center w-full lg:hidden">
           <div tw="space-y-2" onClick={() => setIsNavOpen((prev) => !prev)}>
             <span tw="block h-0.5 w-8 animate-pulse border-gray-400 border-2"></span>
@@ -14,14 +14,14 @@ export const Navbar = () => {
             <span tw="block h-0.5 w-8 animate-pulse border-gray-400 border-2"></span>
           </div>
 
-          <div tw="mr-auto ml-auto">
+          <div tw="mr-auto ml-auto whitespace-nowrap">
             <div tw="flex place-content-center">
-              <p tw="text-4xl font-bold gap-5 text-primary-400">
-                SERGIO &amp; BEA
+              <p tw="text-xl font-bold gap-5 text-primary-400">
+                BEA &amp; SERGIO
               </p>
             </div>
             <div tw="flex place-content-center">
-              <p tw="text-xl">SÁBADO, 30 DE AGOSTO DE 2025</p>
+              <p tw="">30 DE AGOSTO DE 2025</p>
             </div>
           </div>
 
@@ -57,13 +57,13 @@ export const Navbar = () => {
                 <a href="/confirmacion">Confirmación</a>
               </li>
               <li tw="border-b border-gray-400 my-8 uppercase">
-                <a href="/nosotros">Nosotros</a>
-              </li>
-              <li tw="border-b border-gray-400 my-8 uppercase">
                 <a href="/boda">La Boda</a>
               </li>
               <li tw="border-b border-gray-400 my-8 uppercase">
                 <a href="/logistica">Logística</a>
+              </li>
+              <li tw="border-b border-gray-400 my-8 uppercase">
+                <a href="/nosotros">Nosotros</a>
               </li>
               <li tw="border-b border-gray-400 my-8 uppercase">
                 <a href="/faq">Preguntas Frecuentes</a>
@@ -72,30 +72,34 @@ export const Navbar = () => {
           </div>
         </section>
 
-        <div tw="hidden lg:flex lg:flex-col">
+        <div tw="hidden lg:flex justify-between items-center">
           <ul tw="space-x-8 flex">
-            <li>
+            <li tw="hover:underline">
               <a href="/">Inicio</a>
             </li>
-            <li>
+            <li tw="hover:underline">
               <a href="/confirmacion">Confirmación</a>
             </li>
-            <li>
-              <a href="/nosotros">Nosotros</a>
-            </li>
-            <li>
+            <li tw="hover:underline">
               <a href="/boda">La Boda</a>
             </li>
-            <li>
+            <li tw="hover:underline">
               <a href="/logistica">Logística</a>
             </li>
-            <li>
+            <li tw="hover:underline">
+              <a href="/nosotros">Nosotros</a>
+            </li>
+            <li tw="hover:underline">
               <a href="/faq">Preguntas Frecuentes</a>
             </li>
           </ul>
-          <div tw="flex flex-col w-screen border border-gray-400">
-            <p>S &amp; B</p>
-            <p tw="text-xl">SÁBADO, 30 DE AGOSTO DE 2025</p>
+          <div tw="whitespace-nowrap px-8">
+            <div tw="flex place-content-center">
+              <p tw="text-2xl font-bold text-primary-400">BEA &amp; SERGIO</p>
+            </div>
+            <div tw="flex place-content-center">
+              <p tw="text-xl">30 DE AGOSTO DE 2025</p>
+            </div>
           </div>
         </div>
       </nav>

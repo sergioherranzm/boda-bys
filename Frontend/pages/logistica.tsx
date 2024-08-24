@@ -2,20 +2,21 @@ const Home = () => {
   return (
     <>
       <div tw="flex flex-col items-center justify-center">
-        <div tw="my-8 flex flex-col items-center">
-          <h1 tw="my-2 text-7xl font-extrabold text-primary-400 ">logistica</h1>
+        <div tw="flex flex-col items-center gap-5 text-primary-400">
+          <p tw="text-4xl font-bold">Alojamientos</p>
+          <p tw="text-xl">TBC</p>
         </div>
-        <div tw="text-4xl flex flex-col items-center font-bold gap-5 text-primary-400">
-          <p>Sergio Herranz Montoya</p>
+        <div tw="flex flex-col items-center gap-5 text-primary-400">
+          <p tw="text-4xl font-bold">Lugar</p>
+          <p tw="text-xl">El Molino de la Venta</p>
+          <p>La lastrilla, Segovia, 122115</p>
 
           <a
-            href="https://github.com/sergioherranzm/parkisi"
+            href="https://maps.app.goo.gl/Cxipa5xk8sJJZnDC8"
             tw="text-xl mr-2 hover:underline cursor-pointer hover:text-secondary-400"
           >
-            https://github.com/sergioherranzm/parkisi
+            Maps
           </a>
-
-          <p tw="text-xl">sergioherranzm@gmail.com</p>
         </div>
       </div>
     </>
