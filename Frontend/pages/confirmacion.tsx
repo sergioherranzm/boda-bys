@@ -1,3 +1,5 @@
+import { FORM_URL } from '../lib/config';
+
 const Home = () => {
   return (
     <>
@@ -10,11 +12,7 @@ const Home = () => {
             Podras rellenar el formulario una sola vez para ti y tus
             acompañantes (o familia).
           </p>
-          <iframe
-            src="https://docs.google.com/forms/d/e/1FAIpQLSdrzNreXMj7_Nh4kT5xe3KCsQ0SYTShE5sXVdB26mpaF8GeAA/viewform?embedded=true"
-            width="600"
-            height="1224"
-          >
+          <iframe src={FORM_URL} width="600" height="1224">
             Cargando…
           </iframe>
         </div>
