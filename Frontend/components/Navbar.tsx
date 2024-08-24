@@ -1,23 +1,34 @@
 import Link from 'next/link';
-import tw from 'twin.macro';
-import { GrScheduleNew, GrTicket, GrSearch } from 'react-icons/gr';
 import { useState } from 'react';
-
-const MenuItem = tw.div`py-4 px-4 whitespace-nowrap border-b-2 border-transparent text-black transition-all hover:bg-secondary-200 hover:border-secondary-400 hover:text-white text-sm`;
-
-const MenuItemStatic = tw.div`py-4 px-2 whitespace-nowrap border-b-2 border-transparent text-black text-sm`;
 
 export const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   return (
-    <div tw="flex items-center justify-between border-b border-gray-400 py-8">
-      <nav>
-        <section tw="flex lg:hidden">
+    <div tw="flex items-center border-b border-gray-400 py-8 px-8">
+      <nav tw="w-full">
+        <section tw="flex items-center w-full lg:hidden">
           <div tw="space-y-2" onClick={() => setIsNavOpen((prev) => !prev)}>
             <span tw="block h-0.5 w-8 animate-pulse border-gray-400 border-2"></span>
             <span tw="block h-0.5 w-8 animate-pulse border-gray-400 border-2"></span>
             <span tw="block h-0.5 w-8 animate-pulse border-gray-400 border-2"></span>
+          </div>
+
+          <div tw="mr-auto ml-auto">
+            <div tw="flex place-content-center">
+              <p tw="text-4xl font-bold gap-5 text-primary-400">
+                SERGIO &amp; BEA
+              </p>
+            </div>
+            <div tw="flex place-content-center">
+              <p tw="text-xl">SÁBADO, 30 DE AGOSTO DE 2025</p>
+            </div>
+          </div>
+
+          <div tw="space-y-2">
+            <span tw="block h-0.5 w-8 border-transparent border-2"></span>
+            <span tw="block h-0.5 w-8 border-transparent border-2"></span>
+            <span tw="block h-0.5 w-8 border-transparent border-2"></span>
           </div>
 
           <div className={isNavOpen ? 'showMenuNav' : 'hideMenuNav'}>
@@ -40,29 +51,53 @@ export const Navbar = () => {
             </div>
             <ul tw="flex flex-col items-center justify-between min-h-[250px]">
               <li tw="border-b border-gray-400 my-8 uppercase">
-                <a href="/about">About</a>
+                <a href="/">Inicio</a>
               </li>
               <li tw="border-b border-gray-400 my-8 uppercase">
-                <a href="/portfolio">Portfolio</a>
+                <a href="/confirmacion">Confirmación</a>
               </li>
               <li tw="border-b border-gray-400 my-8 uppercase">
-                <a href="/contact">Contact21</a>
+                <a href="/nosotros">Nosotros</a>
+              </li>
+              <li tw="border-b border-gray-400 my-8 uppercase">
+                <a href="/boda">La Boda</a>
+              </li>
+              <li tw="border-b border-gray-400 my-8 uppercase">
+                <a href="/logistica">Logística</a>
+              </li>
+              <li tw="border-b border-gray-400 my-8 uppercase">
+                <a href="/faq">Preguntas Frecuentes</a>
               </li>
             </ul>
           </div>
         </section>
 
-        <ul tw="hidden space-x-8 lg:flex">
-          <li>
-            <a href="/about">About</a>
-          </li>
-          <li>
-            <a href="/portfolio">Portfolio</a>
-          </li>
-          <li>
-            <a href="/contact">Contact22</a>
-          </li>
-        </ul>
+        <div tw="hidden lg:flex lg:flex-col">
+          <ul tw="space-x-8 flex">
+            <li>
+              <a href="/">Inicio</a>
+            </li>
+            <li>
+              <a href="/confirmacion">Confirmación</a>
+            </li>
+            <li>
+              <a href="/nosotros">Nosotros</a>
+            </li>
+            <li>
+              <a href="/boda">La Boda</a>
+            </li>
+            <li>
+              <a href="/logistica">Logística</a>
+            </li>
+            <li>
+              <a href="/faq">Preguntas Frecuentes</a>
+            </li>
+          </ul>
+          <div tw="flex flex-col w-screen border border-gray-400">
+            <p>S &amp; B</p>
+            <p tw="text-xl">SÁBADO, 30 DE AGOSTO DE 2025</p>
+          </div>
+        </div>
       </nav>
       <style>{`
       .hideMenuNav {
