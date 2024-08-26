@@ -2,6 +2,7 @@ const Home = () => {
   return (
     <>
       <div tw="text-4xl flex flex-col items-center font-bold gap-5 text-primary-400 text-center">
+        <p tw="text-xl text-red-600">Esta web esta todavía en costrucción</p>
         <img tw="mt-8" src="/portada.png" alt="portada" />
         <p tw="text-xl">
           ¡NOS CASAMOS! ¡Y queremos que nos acompañes es ese día!

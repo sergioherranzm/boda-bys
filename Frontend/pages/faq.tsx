@@ -1,15 +1,31 @@
 const Home = () => {
   return (
     <>
-      <div tw="flex flex-col items-center justify-center">
-        <div tw="my-8 flex flex-col items-center">
-          <h1 tw="my-2 text-7xl font-extrabold text-primary-400 ">FAQ</h1>
-        </div>
-        <div tw="text-4xl flex flex-col items-center font-bold gap-5 text-primary-400">
-          <p>Sergio y Bea</p>
-
-          <p tw="text-xl">Contactanos por mail o tlf</p>
-        </div>
+      <div tw="flex flex-col gap-5 text-primary-400 p-8">
+        <ul tw="list-disc">
+          <li>
+            <p tw="text-xl font-bold">¿Como podemos contactar con vosotros?</p>
+            <p>Puedes contactarnos por teléfono:</p>
+            <ul>
+              <li>
+                Sergio:{' '}
+                <a tw="underline text-secondary-400" href="tel:0034618111034">
+                  618 11 10 34
+                </a>
+              </li>
+              <li>
+                Bea:{' '}
+                <a tw="underline text-secondary-400" href="tel:0034675634437">
+                  675 63 44 37
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p tw="text-xl font-bold">¿Cuánto durará la boda?</p>
+            <p>TBC</p>
+          </li>
+        </ul>
       </div>
     </>
   );

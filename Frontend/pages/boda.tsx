@@ -4,7 +4,7 @@ const Home = () => {
       <div tw="flex flex-col items-center justify-center">
         <div tw="flex flex-col items-center gap-5 text-primary-400">
           <p tw="text-4xl font-bold">Fecha</p>
-          <p tw="text-xl">Sábado, 30 de Agosto de 2025</p>
+          <p tw="text-xl">Sábado, 30 de agosto de 2025</p>
           <p tw="text-xl">13:00 h</p>
         </div>
         <div tw="flex flex-col items-center gap-5 text-primary-400">
