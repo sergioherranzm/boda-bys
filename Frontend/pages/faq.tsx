@@ -22,8 +22,16 @@ const Home = () => {
             </ul>
           </li>
           <li>
-            <p tw="text-xl font-bold">¿Cuánto durará la boda?</p>
-            <p>TBC</p>
+            <p tw="text-xl font-bold">¿?</p>
+            <p>TBD</p>
+          </li>
+          <li>
+            <p tw="text-xl font-bold">¿?</p>
+            <p>TBD</p>
+          </li>
+          <li>
+            <p tw="text-xl font-bold">¿?</p>
+            <p>TBD</p>
           </li>
         </ul>
       </div>
