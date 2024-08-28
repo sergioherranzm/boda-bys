@@ -1,3 +1,5 @@
+import ContentCopyIcon from '@mui/icons-material/ContentCopy';
+
 const Home = () => {
   return (
     <>
@@ -9,8 +11,22 @@ const Home = () => {
         </p>
         <p tw="text-xl">¡Os lo agradecemos mucho!</p>
         <p tw="text-xl"></p>
-        <p tw="text-2xl font-bold">ES74 0182 5322 2102 0102 0108</p>
-        <img src="#" alt="foto" />
+        <div tw="flex items-center justify-between gap-5">
+          <div>
+            <p tw="text-2xl font-bold">ES74 0182 5322 2102 0102 0108</p>
+          </div>
+          <div
+            tw="underline"
+            onClick={() => {
+              navigator.clipboard.writeText('ES7401825322210201020108');
+            }}
+          >
+            <ContentCopyIcon fontSize="large"></ContentCopyIcon>
+          </div>
+        </div>
+        <div tw="my-8">
+          <img src="#" alt="foto" />
+        </div>
       </div>
     </>
   );

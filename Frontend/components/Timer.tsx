@@ -16,7 +16,7 @@ export const Timer = () => {
   var diff_sec_round = Math.trunc(diff_sec + 1);
   diff_sec_round = diff_sec_round == 60 ? 0 : diff_sec_round;
 
-  const [time, setTime] = useState(999999999999);
+  const [time, setTime] = useState(999999);
 
   useEffect(() => {
     let timer = setInterval(() => {

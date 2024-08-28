@@ -60,7 +60,7 @@ export const Navbar = () => {
                 <a href="/boda">La Boda</a>
               </li>
               <li tw="border-b border-gray-400 my-8 uppercase">
-                <a href="/logistica">Logística</a>
+                <a href="/logistica">Alojamiento y Transporte</a>
               </li>
               <li tw="border-b border-gray-400 my-8 uppercase">
                 <a href="/lista">Lista de Bodas</a>
@@ -84,7 +84,7 @@ export const Navbar = () => {
               <a href="/boda">La Boda</a>
             </li>
             <li tw="hover:underline">
-              <a href="/logistica">Logística</a>
+              <a href="/logistica">Alojamiento y Transporte</a>
             </li>
             <li tw="hover:underline">
               <a href="/lista">Lista de Bodas</a>

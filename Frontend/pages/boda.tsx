@@ -43,13 +43,13 @@ const Home = () => {
           </p>
         </div>
         <a
-          href="/#"
+          href="/boda"
           tw="mr-2 underline cursor-pointer hover:text-secondary-400"
         >
           Ver autobuses
         </a>
         <a
-          href="/#"
+          href="/boda"
           tw="mr-2 underline cursor-pointer hover:text-secondary-400"
         >
           Telefono de taxi Segovia

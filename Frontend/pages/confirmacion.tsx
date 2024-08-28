@@ -3,21 +3,21 @@ import { FORM_URL } from '../lib/config';
 const Home = () => {
   return (
     <>
-      <div tw="px-8 py-4 text-center">
-        <div tw="font-bold text-primary-400">
-          <p tw="text-4xl">
+      <div tw="mt-4 mx-auto ">
+        <div tw="px-4 text-primary-400 mx-auto max-w-max">
+          <p tw="font-bold">
             Por favor, confirma tu asistencia a través del siguiente formulario:
           </p>
-          <p tw="">
-            Podras rellenar el formulario una sola vez para ti y tus
+          <p tw="text-xs mt-2">
+            Podrás rellenar el formulario una sola vez para ti y tus
             acompañantes (o familia).
           </p>
         </div>
-      </div>
-      <div tw="w-screen">
-        <iframe src={FORM_URL} width="100%" height="1224">
-          Cargando…
-        </iframe>
+        <div tw="">
+          <iframe src={FORM_URL} width="100%" height="1224">
+            Cargando…
+          </iframe>
+        </div>
       </div>
     </>
   );
