@@ -16,18 +16,13 @@ export const Timer = () => {
   var diff_sec_round = Math.trunc(diff_sec + 1);
   diff_sec_round = diff_sec_round == 60 ? 0 : diff_sec_round;
 
-  const [time, setTime] = useState(999999);
+  const [time, setTime] = useState(0);
 
   useEffect(() => {
-    let timer = setInterval(() => {
-      setTime((time) => {
-        if (time === 0) {
-          clearInterval(timer);
-          return 0;
-        } else return time - 1;
-      });
+    setInterval(() => {
+      setTime((time) => time + 1);
     }, 1000);
-  }, []);
+  }, [time]);
 
   return (
     <div tw="mt-2">
@@ -37,7 +32,7 @@ export const Timer = () => {
       <p>{diff_hour_round} horas</p>
       <p>{diff_min_round} minutos</p>
       <p>{diff_sec_round} segundos</p>*/}
-      <p>
+      <p suppressHydrationWarning>
         ¡Quedan {diff_days_round} días, {diff_hour_round} horas,{' '}
         {diff_min_round} minutos y {diff_sec_round} segundos!
       </p>

@@ -4,49 +4,66 @@ import RemoveIcon from '@mui/icons-material/Remove';
 import AddIcon from '@mui/icons-material/Add';
 
 const Home = () => {
-  const [selectedDiv, setselectedDiv] = useState('0');
+  const [isOpen1, setIsOpen1] = useState(false);
+  const [isOpen2, setIsOpen2] = useState(false);
+  const [isOpen3, setIsOpen3] = useState(false);
+  const [isOpen4, setIsOpen4] = useState(false);
+  const [isOpen5, setIsOpen5] = useState(false);
+  const [isOpen6, setIsOpen6] = useState(false);
 
   return (
-    <AnimatePresence>
-      <div tw="container my-1 p-1 grid grid-cols-1 gap-y-1">
-        {selectedDiv != '1' ? (
-          <motion.div
-            whileTap={{ height: 140 }}
-            initial={{ height: 100 }}
-            transition={{ delay: 0.05 }}
-            exit={{ height: 100 }}
-            key={'activity._id'}
-            tw="border border-primary-100 shadow-2xl py-2 rounded-lg flex flex-row justify-between w-full hover:ring-2 ring-secondary-200 flex-wrap"
-            style={{ zIndex: 0, backgroundColor: 'white' }}
-            onClick={() => setselectedDiv('1')}
-          >
-            <div tw="px-2 flex gap-1">
-              <div>
-                <AddIcon></AddIcon>
-              </div>
+    <>
+      <AnimatePresence mode="wait">
+        <div tw="container my-1 p-1 grid grid-cols-1 gap-y-1">
+          <div tw="border border-primary-100 shadow-2xl py-2 rounded-lg w-full hover:ring-2 ring-secondary-200">
+            <div
+              tw="px-2 flex gap-1"
+              onClick={() => setIsOpen1((prev) => !prev)}
+            >
+              <motion.div>
+                {!isOpen1 ? <AddIcon></AddIcon> : <RemoveIcon></RemoveIcon>}
+              </motion.div>
               <p tw="text-xl font-bold">
                 ¿Como podemos contactar con vosotros?
               </p>
             </div>
-          </motion.div>
-        ) : (
-          <motion.div
-            animate={{ height: 140 }}
-            initial={false}
-            transition={{ delay: 0.05 }}
-            exit={{ height: 100 }}
-            key={'activity._id'}
-            tw="border bg-white border-primary-100 shadow-2xl py-2 rounded-lg flex flex-col gap-y-2 justify-between w-full ring-2 ring-secondary-200 flex-nowrap"
-            style={{ zIndex: 0 }}
-          >
-            <div tw="px-2 flex gap-1">
-              <div>
-                <RemoveIcon></RemoveIcon>
-              </div>
-              <div>
-                <p tw="text-xl font-bold">
-                  ¿Como podemos contactar con vosotros?
-                </p>
+
+            {!isOpen1 ? (
+              <div></div>
+            ) : (
+              <motion.div
+                initial={{
+                  height: 0,
+                  opacity: 0,
+                }}
+                animate={{
+                  height: 'auto',
+                  opacity: 1,
+                  transition: {
+                    height: {
+                      duration: 0.4,
+                    },
+                    opacity: {
+                      duration: 0.25,
+                      delay: 0.15,
+                    },
+                  },
+                }}
+                exit={{
+                  height: 0,
+                  opacity: 0,
+                  transition: {
+                    height: {
+                      duration: 0.4,
+                    },
+                    opacity: {
+                      duration: 0.25,
+                    },
+                  },
+                }}
+                className="font-light"
+                tw="ml-10 mt-2"
+              >
                 <p>Nuestros teléfonos son:</p>
                 <ul>
                   <li>
@@ -68,129 +85,182 @@ const Home = () => {
                     </a>
                   </li>
                 </ul>
-              </div>
+              </motion.div>
+            )}
+          </div>
+          <div tw="border border-primary-100 shadow-2xl py-2 rounded-lg w-full hover:ring-2 ring-secondary-200">
+            <div
+              tw="px-2 flex gap-1"
+              onClick={() => setIsOpen2((prev) => !prev)}
+            >
+              <motion.div>
+                {!isOpen2 ? <AddIcon></AddIcon> : <RemoveIcon></RemoveIcon>}
+              </motion.div>
+              <p tw="text-xl font-bold">¿Habrá servicio de autobuses?</p>
             </div>
-          </motion.div>
-        )}
-        {selectedDiv != '2' ? (
-          <motion.div
-            whileTap={{ height: 140 }}
-            initial={{ height: 100 }}
-            transition={{ delay: 0.05 }}
-            exit={{ height: 100 }}
-            key={'activity._id'}
-            tw="border border-primary-100 shadow-2xl py-2 rounded-lg flex flex-row justify-between w-full hover:ring-2 ring-secondary-200 flex-wrap"
-            style={{ zIndex: 0, backgroundColor: 'white' }}
-            onClick={() => setselectedDiv('2')}
-          >
-            <div tw="px-2 flex gap-1">
-              <div>
-                <AddIcon></AddIcon>
-              </div>
-              <p tw="text-xl font-bold">Bus</p>
+
+            {!isOpen2 ? (
+              <div></div>
+            ) : (
+              <motion.div
+                initial={{
+                  height: 0,
+                  opacity: 0,
+                }}
+                animate={{
+                  height: 'auto',
+                  opacity: 1,
+                  transition: {
+                    height: {
+                      duration: 0.4,
+                    },
+                    opacity: {
+                      duration: 0.25,
+                      delay: 0.15,
+                    },
+                  },
+                }}
+                exit={{
+                  height: 0,
+                  opacity: 0,
+                  transition: {
+                    height: {
+                      duration: 0.4,
+                    },
+                    opacity: {
+                      duration: 0.25,
+                    },
+                  },
+                }}
+                className="font-light"
+                tw="ml-10 mt-2"
+              >
+                <p>
+                  No está definido todavía. Actualizaremos esta sección cuando
+                  tengamos más noticias.
+                </p>
+              </motion.div>
+            )}
+          </div>{' '}
+          <div tw="border border-primary-100 shadow-2xl py-2 rounded-lg w-full hover:ring-2 ring-secondary-200">
+            <div
+              tw="px-2 flex gap-1"
+              onClick={() => setIsOpen3((prev) => !prev)}
+            >
+              <motion.div>
+                {!isOpen3 ? <AddIcon></AddIcon> : <RemoveIcon></RemoveIcon>}
+              </motion.div>
+              <p tw="text-xl font-bold">
+                ¿Habrá alpargatas para cambiarse los tacones?
+              </p>
             </div>
-          </motion.div>
-        ) : (
-          <motion.div
-            animate={{ height: 140 }}
-            initial={false}
-            transition={{ delay: 0.05 }}
-            exit={{ height: 100 }}
-            key={'activity._id'}
-            tw="border bg-white border-primary-100 shadow-2xl py-2 rounded-lg flex flex-col gap-y-2 justify-between w-full ring-2 ring-secondary-200 flex-nowrap"
-            style={{ zIndex: 0 }}
-          >
-            <div tw="px-2 flex gap-1">
-              <div>
-                <RemoveIcon></RemoveIcon>
-              </div>
-              <div>
-                <p tw="text-xl font-bold">Bus</p>
-                <p>TBC</p>
-              </div>
+
+            {!isOpen3 ? (
+              <div></div>
+            ) : (
+              <motion.div
+                initial={{
+                  height: 0,
+                  opacity: 0,
+                }}
+                animate={{
+                  height: 'auto',
+                  opacity: 1,
+                  transition: {
+                    height: {
+                      duration: 0.4,
+                    },
+                    opacity: {
+                      duration: 0.25,
+                      delay: 0.15,
+                    },
+                  },
+                }}
+                exit={{
+                  height: 0,
+                  opacity: 0,
+                  transition: {
+                    height: {
+                      duration: 0.4,
+                    },
+                    opacity: {
+                      duration: 0.25,
+                    },
+                  },
+                }}
+                className="font-light"
+                tw="ml-10 mt-2"
+              >
+                <p>
+                  No está definido todavía. Actualizaremos esta sección cuando
+                  tengamos más noticias.
+                </p>
+              </motion.div>
+            )}
+          </div>{' '}
+          <div tw="border border-primary-100 shadow-2xl py-2 rounded-lg w-full hover:ring-2 ring-secondary-200">
+            <div
+              tw="px-2 flex gap-1"
+              onClick={() => setIsOpen4((prev) => !prev)}
+            >
+              <motion.div>
+                {!isOpen4 ? <AddIcon></AddIcon> : <RemoveIcon></RemoveIcon>}
+              </motion.div>
+              <p tw="text-xl font-bold">
+                ¿Se puede lanzar arroz o confeti a los novios?
+              </p>
             </div>
-          </motion.div>
-        )}{' '}
-        {selectedDiv != '3' ? (
-          <motion.div
-            whileTap={{ height: 140 }}
-            initial={{ height: 100 }}
-            transition={{ delay: 0.05 }}
-            exit={{ height: 100 }}
-            key={'activity._id'}
-            tw="border border-primary-100 shadow-2xl py-2 rounded-lg flex flex-row justify-between w-full hover:ring-2 ring-secondary-200 flex-wrap"
-            style={{ zIndex: 0, backgroundColor: 'white' }}
-            onClick={() => setselectedDiv('3')}
-          >
-            <div tw="px-2 flex gap-1">
-              <div>
-                <AddIcon></AddIcon>
-              </div>
-              <p tw="text-xl font-bold">Arroz</p>
-            </div>
-          </motion.div>
-        ) : (
-          <motion.div
-            animate={{ height: 140 }}
-            initial={false}
-            transition={{ delay: 0.05 }}
-            exit={{ height: 100 }}
-            key={'activity._id'}
-            tw="border bg-white border-primary-100 shadow-2xl py-2 rounded-lg flex flex-col gap-y-2 justify-between w-full ring-2 ring-secondary-200 flex-nowrap"
-            style={{ zIndex: 0 }}
-          >
-            <div tw="px-2 flex gap-1">
-              <div>
-                <RemoveIcon></RemoveIcon>
-              </div>
-              <div>
-                <p tw="text-xl font-bold">Arroz</p>
-                <p>TBC</p>
-              </div>
-            </div>
-          </motion.div>
-        )}{' '}
-        {selectedDiv != '4' ? (
-          <motion.div
-            whileTap={{ height: 140 }}
-            initial={{ height: 100 }}
-            transition={{ delay: 0.05 }}
-            exit={{ height: 100 }}
-            key={'activity._id'}
-            tw="border border-primary-100 shadow-2xl py-2 rounded-lg flex flex-row justify-between w-full hover:ring-2 ring-secondary-200 flex-wrap"
-            style={{ zIndex: 0, backgroundColor: 'white' }}
-            onClick={() => setselectedDiv('4')}
-          >
-            <div tw="px-2 flex gap-1">
-              <div>
-                <AddIcon></AddIcon>
-              </div>
-              <p tw="text-xl font-bold">Alpargatas</p>
-            </div>
-          </motion.div>
-        ) : (
-          <motion.div
-            animate={{ height: 140 }}
-            initial={false}
-            transition={{ delay: 0.05 }}
-            exit={{ height: 100 }}
-            key={'activity._id'}
-            tw="border bg-white border-primary-100 shadow-2xl py-2 rounded-lg flex flex-col gap-y-2 justify-between w-full ring-2 ring-secondary-200 flex-nowrap"
-            style={{ zIndex: 0 }}
-          >
-            <div tw="px-2 flex gap-1">
-              <div>
-                <RemoveIcon></RemoveIcon>
-              </div>
-              <div>
-                <p tw="text-xl font-bold">Alpargatas</p>
-                <p>TBC</p>
-              </div>
-            </div>
-          </motion.div>
-        )}
-      </div>
-    </AnimatePresence>
+
+            {!isOpen4 ? (
+              <div></div>
+            ) : (
+              <motion.div
+                initial={{
+                  height: 0,
+                  opacity: 0,
+                }}
+                animate={{
+                  height: 'auto',
+                  opacity: 1,
+                  transition: {
+                    height: {
+                      duration: 0.4,
+                    },
+                    opacity: {
+                      duration: 0.25,
+                      delay: 0.15,
+                    },
+                  },
+                }}
+                exit={{
+                  height: 0,
+                  opacity: 0,
+                  transition: {
+                    height: {
+                      duration: 0.4,
+                    },
+                    opacity: {
+                      duration: 0.25,
+                    },
+                  },
+                }}
+                className="font-light"
+                tw="ml-10 mt-2"
+              >
+                <p>
+                  La finca sanciona expresamente el uso de arroz o confeti, por
+                  lo que os pedimos que os abstengais de tirarlos.
+                </p>
+                <p>
+                  No os preocupes, se proporcionará munición adecuada para
+                  acribillar a los novios convenientemente.
+                </p>
+              </motion.div>
+            )}
+          </div>
+        </div>
+      </AnimatePresence>
+    </>
   );
 };
 
