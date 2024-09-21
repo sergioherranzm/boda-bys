@@ -2,13 +2,13 @@ const Home = () => {
   return (
     <>
       <div tw="flex flex-col items-center justify-center">
-        <div tw="flex flex-col items-center gap-5 text-primary-400">
-          <p tw="text-4xl font-bold">Fecha</p>
+        <div tw="flex flex-col items-center justify-center" id="fotoBoda"></div>
+        {/*<img tw="max-w-xl" src="/fotomaton.jpeg" alt="foto" />*/}
+        <div tw="mt-8 flex flex-col items-center gap-5 text-primary-400">
           <p tw="text-xl">Sábado, 30 de agosto de 2025</p>
           <p tw="text-xl">13:00 h</p>
         </div>
         <div tw="flex flex-col items-center gap-5 text-primary-400">
-          <p tw="text-4xl font-bold">Lugar</p>
           <p tw="text-xl">El Molino de la Venta</p>
           <p>La lastrilla, Segovia, 122115</p>
           <a

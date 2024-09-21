@@ -24,8 +24,8 @@ const Home = () => {
             <ContentCopyIcon fontSize="large"></ContentCopyIcon>
           </div>
         </div>
-        <div tw="my-8">
-          <img src="#" alt="foto" />
+        <div tw="">
+          <img tw="mt-8" src="/wantu.jpeg" alt="foto" />
         </div>
       </div>
     </>

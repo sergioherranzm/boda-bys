@@ -1,5 +1,7 @@
 import { AnimatePresence, motion } from 'framer-motion';
 import { useState } from 'react';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import PhoneIcon from '@mui/icons-material/Phone';
 import RemoveIcon from '@mui/icons-material/Remove';
 import AddIcon from '@mui/icons-material/Add';
 
@@ -64,24 +66,24 @@ const Home = () => {
                 className="font-light"
                 tw="ml-10 mt-2"
               >
-                <p>Nuestros teléfonos son:</p>
+                <p>Aquí tienes nuestros contactos:</p>
                 <ul>
                   <li>
                     &nbsp; Sergio:{' '}
-                    <a
-                      tw="underline text-secondary-400"
-                      href="tel:+34618111034"
-                    >
-                      618 11 10 34
+                    <a tw="text-blue-600" href="tel:+34618111034">
+                      <PhoneIcon fontSize="large"></PhoneIcon>
+                    </a>{' '}
+                    <a tw="text-green-600" href="https://wa.me/618111034">
+                      <WhatsAppIcon fontSize="large"></WhatsAppIcon>
                     </a>
                   </li>
                   <li>
                     &nbsp; Bea:{' '}
-                    <a
-                      tw="underline text-secondary-400"
-                      href="tel:+34675634437"
-                    >
-                      675 63 44 37
+                    <a tw="text-blue-600" href="tel:+34675634437">
+                      <PhoneIcon fontSize="large"></PhoneIcon>
+                    </a>{' '}
+                    <a tw="text-green-600" href="https://wa.me/675634437">
+                      <WhatsAppIcon fontSize="large"></WhatsAppIcon>
                     </a>
                   </li>
                 </ul>
@@ -141,7 +143,7 @@ const Home = () => {
                 </p>
               </motion.div>
             )}
-          </div>{' '}
+          </div>
           <div tw="border border-primary-100 shadow-2xl py-2 rounded-lg w-full hover:ring-2 ring-secondary-200">
             <div
               tw="px-2 flex gap-1"
@@ -197,7 +199,7 @@ const Home = () => {
                 </p>
               </motion.div>
             )}
-          </div>{' '}
+          </div>
           <div tw="border border-primary-100 shadow-2xl py-2 rounded-lg w-full hover:ring-2 ring-secondary-200">
             <div
               tw="px-2 flex gap-1"
@@ -254,6 +256,121 @@ const Home = () => {
                 <p>
                   No os preocupes, se proporcionará munición adecuada para
                   acribillar a los novios convenientemente.
+                </p>
+              </motion.div>
+            )}
+          </div>
+          <div tw="border border-primary-100 shadow-2xl py-2 rounded-lg w-full hover:ring-2 ring-secondary-200">
+            <div
+              tw="px-2 flex gap-1"
+              onClick={() => setIsOpen5((prev) => !prev)}
+            >
+              <motion.div>
+                {!isOpen5 ? <AddIcon></AddIcon> : <RemoveIcon></RemoveIcon>}
+              </motion.div>
+              <p tw="text-xl font-bold">¿Dónde aparcar?</p>
+            </div>
+
+            {!isOpen5 ? (
+              <div></div>
+            ) : (
+              <motion.div
+                initial={{
+                  height: 0,
+                  opacity: 0,
+                }}
+                animate={{
+                  height: 'auto',
+                  opacity: 1,
+                  transition: {
+                    height: {
+                      duration: 0.4,
+                    },
+                    opacity: {
+                      duration: 0.25,
+                      delay: 0.15,
+                    },
+                  },
+                }}
+                exit={{
+                  height: 0,
+                  opacity: 0,
+                  transition: {
+                    height: {
+                      duration: 0.4,
+                    },
+                    opacity: {
+                      duration: 0.25,
+                    },
+                  },
+                }}
+                className="font-light"
+                tw="ml-10 mt-2"
+              >
+                <p>
+                  En la sección de{' '}
+                  <a tw="underline" href="/logistica">
+                    recomendaciones
+                  </a>{' '}
+                  puedes encontrar las ditintas opciones de transporte y
+                  aparcamiento.
+                </p>
+              </motion.div>
+            )}
+          </div>
+          <div tw="border border-primary-100 shadow-2xl py-2 rounded-lg w-full hover:ring-2 ring-secondary-200">
+            <div
+              tw="px-2 flex gap-1"
+              onClick={() => setIsOpen6((prev) => !prev)}
+            >
+              <motion.div>
+                {!isOpen6 ? <AddIcon></AddIcon> : <RemoveIcon></RemoveIcon>}
+              </motion.div>
+              <p tw="text-xl font-bold">
+                ¿La boda es en el interior o al aire libre?
+              </p>
+            </div>
+
+            {!isOpen6 ? (
+              <div></div>
+            ) : (
+              <motion.div
+                initial={{
+                  height: 0,
+                  opacity: 0,
+                }}
+                animate={{
+                  height: 'auto',
+                  opacity: 1,
+                  transition: {
+                    height: {
+                      duration: 0.4,
+                    },
+                    opacity: {
+                      duration: 0.25,
+                      delay: 0.15,
+                    },
+                  },
+                }}
+                exit={{
+                  height: 0,
+                  opacity: 0,
+                  transition: {
+                    height: {
+                      duration: 0.4,
+                    },
+                    opacity: {
+                      duration: 0.25,
+                    },
+                  },
+                }}
+                className="font-light"
+                tw="ml-10 mt-2"
+              >
+                <p>
+                  ¡Las dos cosas! La ceremonia y el cocktail se celebrarán al
+                  aire libre, la comida en el interior de los salones, y para la
+                  fiesta estaremos en el jardín con carpa.
                 </p>
               </motion.div>
             )}

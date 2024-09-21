@@ -79,7 +79,7 @@ const Home = () => {
                   <p>Tabla de distancias: TBC</p>
                 </motion.div>
               )}
-            </div>{' '}
+            </div>
             <div tw="border border-primary-100 shadow-2xl py-2 rounded-lg w-full hover:ring-2 ring-secondary-200">
               <div
                 tw="px-2 flex gap-1"
@@ -140,6 +140,9 @@ const Home = () => {
           <div tw="flex flex-col items-center gap-5 text-primary-400">
             <p tw="text-xl font-bold">Transporte</p>
             <p tw="text-lg">En desarrollo</p>
+            <p tw="text-lg">Taxi</p>
+            <p tw="text-lg">Bus</p>
+            <p tw="text-lg">Aparcamientos</p>
           </div>
         </div>
       </AnimatePresence>

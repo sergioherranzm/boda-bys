@@ -14,11 +14,12 @@ export const Navbar = () => {
             <span tw="block h-0.5 w-8 animate-pulse border-gray-400 border-2"></span>
           </div>
 
-          <div tw="mr-auto ml-auto whitespace-nowrap">
+          <div
+            tw="mr-auto ml-auto whitespace-nowrap"
+            className="lobster-regular"
+          >
             <div tw="flex place-content-center">
-              <p tw="text-xl font-bold gap-5 text-primary-400">
-                BEA &amp; SERGIO
-              </p>
+              <p tw="text-2xl font-bold gap-5 text-primary-400">BEA Y SERGIO</p>
             </div>
             <div tw="flex place-content-center">
               <p tw="">30 DE AGOSTO DE 2025</p>
@@ -54,16 +55,16 @@ export const Navbar = () => {
                 <a href="/">Inicio</a>
               </li>
               <li tw="border-b border-gray-400 my-8 uppercase">
-                <a href="/confirmacion">Confirmación</a>
+                <a href="/confirmacion">Confirmar Asistencia</a>
               </li>
               <li tw="border-b border-gray-400 my-8 uppercase">
                 <a href="/boda">La Boda</a>
               </li>
               <li tw="border-b border-gray-400 my-8 uppercase">
-                <a href="/logistica">Alojamiento y Transporte</a>
+                <a href="/logistica">Recomendaciones</a>
               </li>
               <li tw="border-b border-gray-400 my-8 uppercase">
-                <a href="/lista">Lista de Bodas</a>
+                <a href="/lista">Regalos</a>
               </li>
               <li tw="border-b border-gray-400 my-8 uppercase">
                 <a href="/faq">Preguntas Frecuentes</a>
@@ -78,24 +79,24 @@ export const Navbar = () => {
               <a href="/">Inicio</a>
             </li>
             <li tw="hover:underline">
-              <a href="/confirmacion">Confirmación</a>
+              <a href="/confirmacion">Confirmar Asistencia</a>
             </li>
             <li tw="hover:underline">
               <a href="/boda">La Boda</a>
             </li>
             <li tw="hover:underline">
-              <a href="/logistica">Alojamiento y Transporte</a>
+              <a href="/logistica">Recomendaciones</a>
             </li>
             <li tw="hover:underline">
-              <a href="/lista">Lista de Bodas</a>
+              <a href="/lista">Regalos</a>
             </li>
             <li tw="hover:underline">
               <a href="/faq">Preguntas Frecuentes</a>
             </li>
           </ul>
-          <div tw="whitespace-nowrap px-8">
+          <div tw="whitespace-nowrap px-8" className="lobster-regular">
             <div tw="flex place-content-center">
-              <p tw="text-2xl font-bold text-primary-400">BEA &amp; SERGIO</p>
+              <p tw="text-2xl font-bold text-primary-400">BEA Y SERGIO</p>
             </div>
             <div tw="flex place-content-center">
               <p tw="text-xl">30 DE AGOSTO DE 2025</p>
