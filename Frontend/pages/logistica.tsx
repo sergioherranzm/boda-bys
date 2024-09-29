@@ -73,8 +73,8 @@ const Home = () => {
                     desayuno.
                   </p>
                   <p>
-                    Nota: Acordaos de decir que vais a la boda para que os
-                    apliquen el precio especial.
+                    Nota: Cuando reserveis, acordaos de informar que vais a
+                    nuestra boda para que os apliquen el precio especial.
                   </p>
                   <p>Tabla de distancias: TBC</p>
                 </motion.div>

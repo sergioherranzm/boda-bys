@@ -30,7 +30,7 @@ export default class MyDocument extends Document {
           href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
           rel="stylesheet"
         />
-        <body>
+        <body tw="bg-bg-100">
           <Main />
           <NextScript />
         </body>

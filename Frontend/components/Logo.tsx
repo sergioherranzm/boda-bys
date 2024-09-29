@@ -1,12 +1,16 @@
 export const Logo: React.FC<{
-  fillColor?: string;
+  type?: string;
   width?: string;
   height?: string;
-}> = ({ fillColor = 'black', width = '40', height = '40' }) => {
+}> = ({ type = 'nobg', width = '40', height = '40' }) => {
   return (
     <>
       {/* eslint-disable */}
-      <img src="/logo_white.png" alt="logo" width={width} />
+      {type == 'white' ? (
+        <img src="/logo_white.png" alt="logo" width={width} />
+      ) : (
+        <img src="/logo_nobg.png" alt="logo" width={width} />
+      )}
       {/* eslint-enable */}
     </>
   );
