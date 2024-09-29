@@ -16,7 +16,7 @@ const Home = () => {
   return (
     <>
       <AnimatePresence mode="wait">
-        <div tw="container my-1 p-1 grid grid-cols-1 gap-y-1">
+        <div tw="flex flex-col items-center justify-center container mx-auto py-2 px-1 gap-y-1">
           <div tw="border border-primary-100 shadow-2xl py-2 rounded-lg w-full hover:ring-2 ring-secondary-200">
             <div
               tw="px-2 flex gap-1"
@@ -376,6 +376,7 @@ const Home = () => {
             )}
           </div>
         </div>
+        <div tw="" id="fotoFAQ"></div>
       </AnimatePresence>
     </>
   );

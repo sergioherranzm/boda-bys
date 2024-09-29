@@ -12,7 +12,7 @@ export const Layout: React.FC<{ children: any }> = ({ children }) => {
       <div tw="flex flex-col justify-between min-h-screen items-stretch">
         <div tw="h-full w-full">
           <Navbar />
-          <div tw="container mx-auto px-1">{children}</div>
+          <div tw="container mx-auto min-w-full">{children}</div>
         </div>
         <Footer />
       </div>

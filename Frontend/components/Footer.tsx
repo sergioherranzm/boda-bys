@@ -1,7 +1,7 @@
 export const Footer = () => {
   return (
-    <footer>
-      <div tw="bg-primary-500 text-white text-center container mx-auto px-6 py-4">
+    <footer tw="w-full">
+      <div tw="bg-primary-500 text-white text-center container px-6 py-4 w-full h-full min-w-full">
         <div tw="pb-2">
           <p tw="inline font-bold text-xl"> B &amp; S</p>
         </div>

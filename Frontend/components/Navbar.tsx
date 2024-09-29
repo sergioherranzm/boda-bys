@@ -1,5 +1,5 @@
-import Link from 'next/link';
 import { useState } from 'react';
+import { Logo } from './Logo';
 
 export const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -50,8 +50,9 @@ export const Navbar = () => {
                 <line x1="6" y1="6" x2="18" y2="18" />
               </svg>
             </div>
+            <Logo width="200" />
             <ul tw="flex flex-col items-center justify-between min-h-[250px]">
-              <li tw="border-b border-gray-400 my-8 uppercase">
+              <li tw="border-b border-gray-400 mb-8 uppercase">
                 <a href="/">Inicio</a>
               </li>
               <li tw="border-b border-gray-400 my-8 uppercase">
@@ -74,26 +75,30 @@ export const Navbar = () => {
         </section>
 
         <div tw="hidden lg:flex justify-between items-center">
-          <ul tw="space-x-8 flex">
-            <li tw="hover:underline">
-              <a href="/">Inicio</a>
-            </li>
-            <li tw="hover:underline">
-              <a href="/confirmacion">Confirmar Asistencia</a>
-            </li>
-            <li tw="hover:underline">
-              <a href="/boda">La Boda</a>
-            </li>
-            <li tw="hover:underline">
-              <a href="/logistica">Recomendaciones</a>
-            </li>
-            <li tw="hover:underline">
-              <a href="/lista">Regalos</a>
-            </li>
-            <li tw="hover:underline">
-              <a href="/faq">Preguntas Frecuentes</a>
-            </li>
-          </ul>
+          <Logo width="65" />
+          <div tw="w-full px-4">
+            <ul tw="space-x-8 flex items-center text-center">
+              <li tw="hover:underline">
+                <a href="/">Inicio</a>
+              </li>
+              <li tw="hover:underline">
+                <a href="/confirmacion">Confirmar Asistencia</a>
+              </li>
+              <li tw="hover:underline">
+                <a href="/boda">La Boda</a>
+              </li>
+              <li tw="hover:underline">
+                <a href="/logistica">Recomendaciones</a>
+              </li>
+              <li tw="hover:underline">
+                <a href="/lista">Regalos</a>
+              </li>
+              <li tw="hover:underline">
+                <a href="/faq">Preguntas Frecuentes</a>
+              </li>
+            </ul>
+          </div>
+
           <div tw="whitespace-nowrap px-8" className="lobster-regular">
             <div tw="flex place-content-center">
               <p tw="text-2xl font-bold text-primary-400">BEA Y SERGIO</p>

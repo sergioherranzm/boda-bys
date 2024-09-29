@@ -1,9 +1,11 @@
-import ContentCopyIcon from '@mui/icons-material/ContentCopy';
+import { useState } from 'react';
 
 const Home = () => {
+  var [msg, setMsg] = useState('Copiar al portapapeles');
+
   return (
     <>
-      <div tw="flex flex-col items-center gap-5 text-primary-400 text-center p-8">
+      <div tw="flex flex-col items-center gap-5 text-primary-400 text-center px-8 pt-8">
         <p tw="text-xl">¡Vuestra presencia es nuestro mejor regalo!</p>
         <p tw="text-xl">
           Pero para los que querais hacer una aportación para nuestra futura
@@ -11,22 +13,23 @@ const Home = () => {
         </p>
         <p tw="text-xl">¡Os lo agradecemos mucho!</p>
         <p tw="text-xl"></p>
-        <div tw="flex items-center justify-between gap-5">
+        <div tw="flex flex-col items-center justify-between gap-2">
           <div>
             <p tw="text-2xl font-bold">ES74 0182 5322 2102 0102 0108</p>
           </div>
           <div
-            tw="underline"
+            tw="px-2 rounded-xl bg-primary-300 text-white hover:bg-green-500"
             onClick={() => {
               navigator.clipboard.writeText('ES7401825322210201020108');
+              setMsg('¡Copiado al portapapeles!');
             }}
           >
-            <ContentCopyIcon fontSize="large"></ContentCopyIcon>
+            {msg}
           </div>
         </div>
-        <div tw="">
-          <img tw="mt-8" src="/wantu.jpeg" alt="foto" />
-        </div>
+
+        <div tw="" id="fotoRegalo"></div>
+        {/*<img tw="mt-8" src="/test1.jpg" alt="foto" />*/}
       </div>
     </>
   );

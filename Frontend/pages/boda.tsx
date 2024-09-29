@@ -2,7 +2,7 @@ const Home = () => {
   return (
     <>
       <div tw="flex flex-col items-center justify-center">
-        <div tw="flex flex-col items-center justify-center" id="fotoBoda"></div>
+        <div tw="" id="fotoBoda"></div>
         {/*<img tw="max-w-xl" src="/fotomaton.jpeg" alt="foto" />*/}
         <div tw="mt-8 flex flex-col items-center gap-5 text-primary-400">
           <p tw="text-xl">Sábado, 30 de agosto de 2025</p>
