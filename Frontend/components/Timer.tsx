@@ -2,7 +2,7 @@ import moment from 'moment';
 import { useEffect, useState } from 'react';
 
 export const Timer = () => {
-  const weddind_date = moment('2025-08-30 11:00:00');
+  const weddind_date = moment('2025-08-30 13:00:00');
   var now_date = moment();
 
   var diff = weddind_date.diff(now_date);
@@ -16,6 +16,19 @@ export const Timer = () => {
   var diff_sec_round = Math.trunc(diff_sec + 1);
   diff_sec_round = diff_sec_round == 60 ? 0 : diff_sec_round;
 
+  var diff_hour_round_str = diff_hour_round.toLocaleString('en-US', {
+    minimumIntegerDigits: 2,
+    useGrouping: false,
+  });
+  var diff_min_round_str = diff_min_round.toLocaleString('en-US', {
+    minimumIntegerDigits: 2,
+    useGrouping: false,
+  });
+  var diff_sec_round_str = diff_sec_round.toLocaleString('en-US', {
+    minimumIntegerDigits: 2,
+    useGrouping: false,
+  });
+
   const [time, setTime] = useState(0);
 
   useEffect(() => {
@@ -25,17 +38,72 @@ export const Timer = () => {
   }, [time]);
 
   return (
-    <div tw="mt-2">
-      {/*<p>{weddind_date.format('MMMM Do YYYY, h:mm:ss a')}</p>
-      <p>{now_date.format('MMMM Do YYYY, h:mm:ss a')}</p>
-      <p>{diff_days_round} días</p>
-      <p>{diff_hour_round} horas</p>
-      <p>{diff_min_round} minutos</p>
-      <p>{diff_sec_round} segundos</p>*/}
-      <p suppressHydrationWarning>
-        ¡Quedan {diff_days_round} días, {diff_hour_round} horas,{' '}
-        {diff_min_round} minutos y {diff_sec_round} segundos!
-      </p>
+    <div tw="">
+      {diff_sec_round > -1 && (
+        <div>
+          {/*<p suppressHydrationWarning>
+            ¡Quedan {diff_days_round} días, {diff_hour_round} horas,{' '}
+            {diff_min_round} minutos y {diff_sec_round} segundos!
+          </p>*/}
+          {/*<div tw="flex flex-col gap-1">
+            <div tw="text-xl">Quedan </div>
+            <div
+              tw="flex justify-center align-bottom gap-1 text-2xl"
+              className="font-digital"
+            >
+              <div
+                suppressHydrationWarning
+                tw="font-extrabold text-4xl bg-gray-900 text-white py-1 px-1 rounded"
+              >
+                {diff_days_round}
+              </div>
+              <div tw="leading-semi-loose">DIAS</div>{' '}
+              <div
+                suppressHydrationWarning
+                className="font-digital"
+                tw="font-bold text-4xl bg-gray-900 text-white py-1 px-1 rounded"
+              >
+                {diff_hour_round_str}:{diff_min_round_str}:{diff_sec_round_str}
+              </div>
+            </div>
+          </div>
+          <div tw="flex flex-col">
+            <div
+              suppressHydrationWarning
+              className="font-digital"
+              tw="font-bold text-4xl bg-black text-white py-1 w-screen"
+            >
+              {diff_days_round} DIAS &nbsp;{diff_hour_round_str}:
+              {diff_min_round_str}:{diff_sec_round_str}
+            </div>
+          </div>*/}
+          <div
+            tw="flex justify-center bg-primary-300 text-white py-1 w-screen text-3xl"
+            className="font-digital"
+          >
+            <div tw="font-thin leading-normal" className="style-script-regular">
+              Quedan&nbsp;
+            </div>
+            <div suppressHydrationWarning tw="font-medium">
+              {diff_days_round}
+            </div>
+            <div tw="font-thin leading-normal" className="style-script-regular">
+              &nbsp;días,&nbsp;
+            </div>
+            <div suppressHydrationWarning tw="font-medium">
+              {diff_hour_round_str}:{diff_min_round_str}:{diff_sec_round_str}
+            </div>
+          </div>
+        </div>
+      )}
+      {diff_sec_round <= -1 && (
+        <div
+          tw="flex justify-center bg-primary-300 text-white py-1 w-screen text-3xl"
+          className="style-script-regular"
+        >
+          ¡Que vivan los novios!
+        </div>
+      )}
     </div>
   );
 };

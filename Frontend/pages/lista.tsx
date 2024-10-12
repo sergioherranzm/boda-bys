@@ -17,15 +17,28 @@ const Home = () => {
           <div>
             <p tw="text-2xl font-bold">ES74 0182 5322 2102 0102 0108</p>
           </div>
-          <div
-            tw="px-2 rounded-xl bg-primary-300 text-white hover:bg-green-500"
-            onClick={() => {
-              navigator.clipboard.writeText('ES7401825322210201020108');
-              setMsg('¡Copiado al portapapeles!');
-            }}
-          >
-            {msg}
-          </div>
+
+          {msg == 'Copiar al portapapeles' ? (
+            <div
+              tw="px-2 rounded-xl bg-primary-300 text-white hover:bg-primary-100"
+              onClick={() => {
+                navigator.clipboard.writeText('ES7401825322210201020108');
+                setMsg('¡Copiado al portapapeles!');
+              }}
+            >
+              {msg}
+            </div>
+          ) : (
+            <div
+              tw="px-2 rounded-xl bg-green-500 text-white"
+              onClick={() => {
+                navigator.clipboard.writeText('ES7401825322210201020108');
+                setMsg('Ya se ha copiado al portapapeles');
+              }}
+            >
+              {msg}
+            </div>
+          )}
         </div>
 
         <div tw="" id="fotoRegalo"></div>

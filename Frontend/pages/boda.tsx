@@ -5,6 +5,10 @@ const Home = () => {
         <div tw="" id="fotoBoda"></div>
         {/*<img tw="max-w-xl" src="/fotomaton.jpeg" alt="foto" />*/}
         <div tw="mt-8 flex flex-col items-center gap-5 text-primary-400">
+          <p tw="text-xl font-bold mt-10">
+            La ceremonia civil será el 30.08.2025 en la finca el Molino de la
+            Venta a las 13:00, y la posterior celebración en el mismo lugar.
+          </p>
           <p tw="text-xl">Sábado, 30 de agosto de 2025</p>
           <p tw="text-xl">13:00 h</p>
         </div>

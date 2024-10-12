@@ -18,12 +18,14 @@ export const Navbar = () => {
             tw="mr-auto ml-auto whitespace-nowrap text-logo-000"
             className="lobster-regular"
           >
-            <div tw="flex place-content-center">
-              <p tw="text-2xl font-bold gap-5">BEA Y SERGIO</p>
-            </div>
-            <div tw="flex place-content-center">
-              <p tw="">30 DE AGOSTO DE 2025</p>
-            </div>
+            <a href="/">
+              <div tw="flex place-content-center">
+                <p tw="text-2xl font-bold gap-5">BEA Y SERGIO</p>
+              </div>
+              <div tw="flex place-content-center">
+                <p tw="">30 DE AGOSTO DE 2025</p>
+              </div>
+            </a>
           </div>
 
           <div tw="space-y-2">
@@ -55,22 +57,22 @@ export const Navbar = () => {
             </div>
             <Logo type="nobg" width="200" />
             <ul tw="flex flex-col items-center justify-between min-h-[250px] font-bold text-logo-000">
-              <li tw="border-b border-gray-400 mb-8 uppercase">
+              <li tw="border-b border-gray-400 mt-4 mb-6 uppercase">
                 <a href="/">Inicio</a>
               </li>
-              <li tw="border-b border-gray-400 my-8 uppercase">
+              <li tw="border-b border-gray-400 my-6 uppercase">
                 <a href="/confirmacion">Confirmar Asistencia</a>
               </li>
-              <li tw="border-b border-gray-400 my-8 uppercase">
+              <li tw="border-b border-gray-400 my-6 uppercase">
                 <a href="/boda">La Boda</a>
               </li>
-              <li tw="border-b border-gray-400 my-8 uppercase">
+              <li tw="border-b border-gray-400 my-6 uppercase">
                 <a href="/logistica">Recomendaciones</a>
               </li>
-              <li tw="border-b border-gray-400 my-8 uppercase">
+              <li tw="border-b border-gray-400 my-6 uppercase">
                 <a href="/lista">Regalos</a>
               </li>
-              <li tw="border-b border-gray-400 my-8 uppercase">
+              <li tw="border-b border-gray-400 my-6 uppercase">
                 <a href="/faq">Preguntas Frecuentes</a>
               </li>
             </ul>

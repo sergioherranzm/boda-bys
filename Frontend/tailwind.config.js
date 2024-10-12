@@ -20,6 +20,9 @@ module.exports = {
         'bg-500': '#f1ca9e',
         'logo-000': '#3f4b35',
       },
+      lineHeight: {
+        'semi-loose': '1.9',
+      },
     },
   },
   plugins: [],
