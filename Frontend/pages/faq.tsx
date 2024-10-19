@@ -16,10 +16,13 @@ const Home = () => {
   return (
     <>
       <AnimatePresence mode="wait">
-        <div tw="flex flex-col items-center justify-center container mx-auto py-2 px-1 gap-y-1">
-          <div tw="border border-primary-100 shadow-2xl py-2 rounded-lg w-full hover:ring-2 ring-secondary-200">
+        <div
+          tw="flex flex-col items-center justify-center container mx-auto py-2 px-1 gap-y-1"
+          className="solitreo-regular"
+        >
+          <div tw="border border-primary-100 shadow-md py-2 rounded-lg w-full hover:ring-2 ring-secondary-200">
             <div
-              tw="px-2 flex gap-1"
+              tw="px-2 pt-1 flex gap-1"
               onClick={() => setIsOpen1((prev) => !prev)}
             >
               <motion.div>
@@ -90,9 +93,9 @@ const Home = () => {
               </motion.div>
             )}
           </div>
-          <div tw="border border-primary-100 shadow-2xl py-2 rounded-lg w-full hover:ring-2 ring-secondary-200">
+          <div tw="border border-primary-100 shadow-md py-2 rounded-lg w-full hover:ring-2 ring-secondary-200">
             <div
-              tw="px-2 flex gap-1"
+              tw="px-2 pt-1 flex gap-1"
               onClick={() => setIsOpen2((prev) => !prev)}
             >
               <motion.div>
@@ -144,9 +147,9 @@ const Home = () => {
               </motion.div>
             )}
           </div>
-          <div tw="border border-primary-100 shadow-2xl py-2 rounded-lg w-full hover:ring-2 ring-secondary-200">
+          <div tw="border border-primary-100 shadow-md py-2 rounded-lg w-full hover:ring-2 ring-secondary-200">
             <div
-              tw="px-2 flex gap-1"
+              tw="px-2 pt-1 flex gap-1"
               onClick={() => setIsOpen3((prev) => !prev)}
             >
               <motion.div>
@@ -200,9 +203,9 @@ const Home = () => {
               </motion.div>
             )}
           </div>
-          <div tw="border border-primary-100 shadow-2xl py-2 rounded-lg w-full hover:ring-2 ring-secondary-200">
+          <div tw="border border-primary-100 shadow-md py-2 rounded-lg w-full hover:ring-2 ring-secondary-200">
             <div
-              tw="px-2 flex gap-1"
+              tw="px-2 pt-1 flex gap-1"
               onClick={() => setIsOpen4((prev) => !prev)}
             >
               <motion.div>
@@ -260,9 +263,9 @@ const Home = () => {
               </motion.div>
             )}
           </div>
-          <div tw="border border-primary-100 shadow-2xl py-2 rounded-lg w-full hover:ring-2 ring-secondary-200">
+          <div tw="border border-primary-100 shadow-md py-2 rounded-lg w-full hover:ring-2 ring-secondary-200">
             <div
-              tw="px-2 flex gap-1"
+              tw="px-2 pt-1 flex gap-1"
               onClick={() => setIsOpen5((prev) => !prev)}
             >
               <motion.div>
@@ -318,9 +321,9 @@ const Home = () => {
               </motion.div>
             )}
           </div>
-          <div tw="border border-primary-100 shadow-2xl py-2 rounded-lg w-full hover:ring-2 ring-secondary-200">
+          <div tw="border border-primary-100 shadow-md py-2 rounded-lg w-full hover:ring-2 ring-secondary-200">
             <div
-              tw="px-2 flex gap-1"
+              tw="px-2 pt-1 flex gap-1"
               onClick={() => setIsOpen6((prev) => !prev)}
             >
               <motion.div>

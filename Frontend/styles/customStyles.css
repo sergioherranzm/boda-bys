@@ -31,6 +31,15 @@
   src: url('/digital-7.ttf');
 }
 
+ul.bulleted {
+  list-style-type: circle;
+}
+
+ul.bulleted-inside {
+  list-style-type: circle;
+  list-style-position: inside;
+}
+
 #fotoPortada {
   width: 100vw;
   height: 530px;

@@ -5,13 +5,17 @@ const Home = () => {
 
   return (
     <>
-      <div tw="flex flex-col items-center gap-5 text-primary-400 text-center px-8 pt-8">
-        <p tw="text-xl">¡Vuestra presencia es nuestro mejor regalo!</p>
-        <p tw="text-xl">
+      <div tw="flex flex-col items-center gap-5 text-primary-400 text-center px-4 pt-8">
+        <p tw="text-xl" className="solitreo-regular">
+          ¡Vuestra presencia es nuestro mejor regalo!
+        </p>
+        <p tw="text-xl" className="solitreo-regular">
           Pero para los que querais hacer una aportación para nuestra futura
           vida juntos os dejamos nuestro número de cuenta.
         </p>
-        <p tw="text-xl">¡Os lo agradecemos mucho!</p>
+        <p tw="text-xl" className="solitreo-regular">
+          ¡Os lo agradecemos mucho!
+        </p>
         <p tw="text-xl"></p>
         <div tw="flex flex-col items-center justify-between gap-2">
           <div>
@@ -33,7 +37,7 @@ const Home = () => {
               tw="px-2 rounded-xl bg-green-500 text-white"
               onClick={() => {
                 navigator.clipboard.writeText('ES7401825322210201020108');
-                setMsg('Ya se ha copiado al portapapeles');
+                setMsg('Que ya se ha copiado al portapapeles');
               }}
             >
               {msg}

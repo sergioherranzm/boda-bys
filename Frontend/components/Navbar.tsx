@@ -5,7 +5,7 @@ export const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   return (
-    <div tw="flex items-center border-b border-gray-400 px-4 w-screen">
+    <div tw="flex items-center border-b border-gray-400 px-4 w-screen sticky top-0 bg-bg-100">
       <nav tw="w-screen">
         <section tw="flex items-center w-full py-1 lg:hidden">
           <div tw="space-y-2" onClick={() => setIsNavOpen((prev) => !prev)}>
@@ -63,6 +63,9 @@ export const Navbar = () => {
               <li tw="border-b border-gray-400 my-6 uppercase">
                 <a href="/confirmacion">Confirmar Asistencia</a>
               </li>
+              {/*<li tw="border-b border-gray-400 my-6 uppercase">
+                <a href="/fotos">Fotos</a>
+              </li>*/}
               <li tw="border-b border-gray-400 my-6 uppercase">
                 <a href="/boda">La Boda</a>
               </li>
@@ -80,25 +83,29 @@ export const Navbar = () => {
         </section>
 
         <div tw="hidden lg:flex justify-between items-center py-1">
+          {/*NAVBAR EXTENDIDA EN PANTALLAS GRANDES*/}
           <Logo type="nobg" width="65" />
           <div tw="w-full px-4">
-            <ul tw="space-x-7 flex items-center text-center font-semibold text-logo-000">
-              <li tw="hover:underline hover:bg-bg-200">
+            <ul tw="space-x-5 flex items-center text-center font-semibold text-logo-000">
+              <li tw="px-2 rounded hover:underline hover:bg-bg-200 hover:py-5">
                 <a href="/">Inicio</a>
               </li>
-              <li tw="hover:underline hover:bg-bg-200">
+              <li tw="px-2 rounded hover:underline hover:bg-bg-200 hover:py-5">
                 <a href="/confirmacion">Confirmar Asistencia</a>
               </li>
-              <li tw="hover:underline hover:bg-bg-200">
+              {/*<li tw="px-2 rounded hover:underline hover:bg-bg-200 hover:py-5">
+                <a href="/fotos">Fotos</a>
+              </li>*/}
+              <li tw="px-2 rounded hover:underline hover:bg-bg-200 hover:py-5">
                 <a href="/boda">La Boda</a>
               </li>
-              <li tw="hover:underline hover:bg-bg-200">
+              <li tw="px-2 rounded hover:underline hover:bg-bg-200 hover:py-5">
                 <a href="/logistica">Recomendaciones</a>
               </li>
-              <li tw="hover:underline hover:bg-bg-200">
+              <li tw="px-2 rounded hover:underline hover:bg-bg-200 hover:py-5">
                 <a href="/lista">Regalos</a>
               </li>
-              <li tw="hover:underline hover:bg-bg-200">
+              <li tw="px-2 rounded hover:underline hover:bg-bg-200 hover:py-5">
                 <a href="/faq">Preguntas Frecuentes</a>
               </li>
             </ul>

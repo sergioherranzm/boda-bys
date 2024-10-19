@@ -8,17 +8,12 @@ const Home = () => {
           tw="px-4 text-primary-400 mx-auto max-w-max"
           className="solitreo-regular"
         >
-          <p tw="font-bold text-center">CONFIRMACIÓN DE ASISTENCIA</p>
+          <p tw="font-bold text-center">FOTOS</p>
           <p tw="mt-2 text-center">
-            Podrás rellenar el formulario una sola vez para ti y tus
-            acompañantes (o familia).
+            Comparte en Google Fotos tus fotos de la boda.
           </p>
         </div>
-        <div tw="">
-          <iframe src={FORM_URL} width="100%" height="1224">
-            Cargando…
-          </iframe>
-        </div>
+        <div tw="">https://photos.app.goo.gl/vmmiqM5RiUiptH8y9</div>
       </div>
     </>
   );

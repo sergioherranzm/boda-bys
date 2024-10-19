@@ -37,6 +37,16 @@ const Home = () => {
           >
             <a href="/confirmacion">CONFIRMA AQUÍ TU ASISTENCIA</a>
           </motion.div>
+          <motion.div
+            tw="text-xl font-bold px-2 rounded mb-4 cursor-pointer hover:bg-secondary-100 bg-bg-400"
+            whileHover={{
+              scaleX: 1.04,
+              scaleY: 1.18,
+              transition: { duration: 0.3 },
+            }}
+          >
+            <a href="/preboda">LA PRE-BODA</a>
+          </motion.div>
           {/*<motion.div
             tw="text-xl font-bold px-2 rounded mb-4 cursor-pointer hover:bg-secondary-100 bg-bg-400"
             whileHover={{
