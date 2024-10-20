@@ -19,6 +19,7 @@ module.exports = {
         'bg-400': '#f3d5b1',
         'bg-500': '#f1ca9e',
         'logo-000': '#3f4b35',
+        'orange-500': '#fa6a02',
       },
       lineHeight: {
         'semi-loose': '1.9',

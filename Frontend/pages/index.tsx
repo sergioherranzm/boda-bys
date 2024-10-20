@@ -4,10 +4,7 @@ import { Timer } from '../components/Timer';
 const Home = () => {
   return (
     <>
-      <div
-        tw="flex flex-col items-center text-primary-400 text-center"
-        className="barlow-semi-condensed-regular"
-      >
+      <div tw="flex flex-col items-center text-primary-400 text-center">
         <div
           tw="flex flex-col items-center justify-center"
           className="lobster-regular"
@@ -27,27 +24,28 @@ const Home = () => {
           <div tw="my-2">
             <img src="/separator.svg" alt="" />
           </div>
-          <motion.div
-            tw="text-xl font-bold px-2 rounded mb-4 cursor-pointer hover:bg-secondary-100 bg-bg-400"
-            whileHover={{
-              scaleX: 1.04,
-              scaleY: 1.18,
-              transition: { duration: 0.3 },
-            }}
-          >
-            <a href="/confirmacion">CONFIRMA AQUÍ TU ASISTENCIA</a>
-          </motion.div>
-          <motion.div
-            tw="text-xl font-bold px-2 rounded mb-4 cursor-pointer hover:bg-secondary-100 bg-bg-400"
-            whileHover={{
-              scaleX: 1.04,
-              scaleY: 1.18,
-              transition: { duration: 0.3 },
-            }}
-          >
-            <a href="/preboda">LA PRE-BODA</a>
-          </motion.div>
-          {/*<motion.div
+          <div className="barlow-semi-condensed-regular">
+            <motion.div
+              tw="text-xl font-bold px-2 rounded mb-4 cursor-pointer hover:bg-secondary-100 bg-bg-400"
+              whileHover={{
+                scaleX: 1.04,
+                scaleY: 1.18,
+                transition: { duration: 0.3 },
+              }}
+            >
+              <a href="/confirmacion">CONFIRMA AQUÍ TU ASISTENCIA</a>
+            </motion.div>
+            {/*<motion.div
+              tw="text-xl font-bold px-2 rounded mb-4 cursor-pointer hover:bg-secondary-100 bg-bg-400"
+              whileHover={{
+                scaleX: 1.04,
+                scaleY: 1.18,
+                transition: { duration: 0.3 },
+              }}
+            >
+              <a href="/preboda">LA PRE-BODA</a>
+            </motion.div>*/}
+            {/*<motion.div
             tw="text-xl font-bold px-2 rounded mb-4 cursor-pointer hover:bg-secondary-100 bg-bg-400"
             whileHover={{
               scaleX: 1.08,
@@ -57,6 +55,7 @@ const Home = () => {
           >
             <a href="/fotos">SUBE AQUÍ TUS FOTOS</a>
           </motion.div>*/}
+          </div>
         </div>
       </div>
       <div tw="mt-5 border-b border-white ">

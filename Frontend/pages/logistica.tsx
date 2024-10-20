@@ -5,7 +5,6 @@ import AddIcon from '@mui/icons-material/Add';
 import SignpostIcon from '@mui/icons-material/Signpost';
 import DirectionsWalkIcon from '@mui/icons-material/DirectionsWalk';
 import DirectionsCarIcon from '@mui/icons-material/DirectionsCar';
-import MapIcon from '@mui/icons-material/Map';
 import AssistantDirectionIcon from '@mui/icons-material/AssistantDirection';
 
 const Home = () => {
@@ -23,7 +22,7 @@ const Home = () => {
           <div tw="mt-5 flex flex-col items-center" id="alojamiento">
             <p tw="text-4xl font-bold">Alojamiento</p>
             <div tw="container my-1 p-1 grid grid-cols-1 gap-y-1">
-              <div tw="border border-primary-100 shadow-md py-2 rounded-lg w-full hover:ring-2 ring-secondary-200">
+              <div tw="border border-primary-100 shadow-md py-2 rounded-lg w-full hover:ring-2 ring-secondary-200 bg-bg-200">
                 <div
                   tw="px-2 pt-1 flex gap-1"
                   onClick={() => setIsOpen1((prev) => !prev)}
@@ -90,19 +89,23 @@ const Home = () => {
                         <DirectionsCarIcon></DirectionsCarIcon> 0 min{' '}
                       </div>
                       <div tw="px-2  hover:text-blue-800">
-                        <a href="https://maps.app.goo.gl/mhdLD6V1Dyo7ehuE6">
+                        <a
+                          href="https://maps.app.goo.gl/mhdLD6V1Dyo7ehuE6"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
                           <AssistantDirectionIcon fontSize="medium"></AssistantDirectionIcon>
                         </a>
                       </div>
                     </div>
                     <div tw="pt-2">
                       <p>
-                        Se trata del propio hotel de la finca. Tiene
-                        habitaciones sencillas.
+                        Se trata del propio hotel de la finca donde se celebra
+                        la boda. Tiene habitaciones sencillas.
                       </p>
                       <ul tw="pt-2" className="bulleted-inside">
-                        El precio especial para los invitados es (todas con
-                        desayuno incluido):
+                        El precio especial por noche para los invitados es
+                        (todas con desayuno incluido):
                         <li tw="">
                           Habitación Doble: <b>68 €</b>
                         </li>
@@ -111,7 +114,7 @@ const Home = () => {
                           disponibilidad): <b>83 €</b>{' '}
                         </li>
                         <li tw="">
-                          Habitación Doble de Uso Individual: <b>53 €</b>
+                          Habitación Individual: <b>53 €</b>
                         </li>
                       </ul>
                       <p tw="pt-2">
@@ -127,7 +130,7 @@ const Home = () => {
                   </motion.div>
                 )}
               </div>
-              <div tw="border border-primary-100 shadow-md py-2 rounded-lg w-full hover:ring-2 ring-secondary-200">
+              <div tw="border border-primary-100 shadow-md py-2 rounded-lg w-full hover:ring-2 ring-secondary-200 bg-bg-200">
                 <div
                   tw="px-2 pt-1 flex gap-1"
                   onClick={() => setIsOpen2((prev) => !prev)}
@@ -203,10 +206,14 @@ const Home = () => {
                       <div>
                         <SignpostIcon></SignpostIcon> 0,4 km /{' '}
                         <DirectionsWalkIcon></DirectionsWalkIcon> 5 min /{' '}
-                        <DirectionsCarIcon></DirectionsCarIcon> -1 min{' '}
+                        <DirectionsCarIcon></DirectionsCarIcon> 1 min{' '}
                       </div>
                       <div tw="px-2  hover:text-blue-800">
-                        <a href="https://maps.app.goo.gl/VDUxW94uv1ExC99E6">
+                        <a
+                          href="https://maps.app.goo.gl/VDUxW94uv1ExC99E6"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
                           <AssistantDirectionIcon fontSize="medium"></AssistantDirectionIcon>
                         </a>
                       </div>
@@ -215,16 +222,11 @@ const Home = () => {
                       <p>Hotel de 4 estrellas muy cerca de la finca.</p>
                       <p tw="pt-2">Precio aprox. 100€/noche.</p>
                       <p>TBC</p>
-                      <p tw="pt-2">
-                        Cuando reserveis,{' '}
-                        <u>acordaos de informar que vais a nuestra boda</u> para
-                        que os apliquen el precio especial.
-                      </p>
                     </div>
                   </motion.div>
                 )}
               </div>
-              <div tw="border border-primary-100 shadow-md py-2 rounded-lg w-full hover:ring-2 ring-secondary-200">
+              <div tw="border border-primary-100 shadow-md py-2 rounded-lg w-full hover:ring-2 ring-secondary-200 bg-bg-200">
                 <div
                   tw="px-2 pt-1 flex gap-1"
                   onClick={() => setIsOpen3((prev) => !prev)}
@@ -303,7 +305,11 @@ const Home = () => {
                         <DirectionsCarIcon></DirectionsCarIcon> 4 min{' '}
                       </div>
                       <div tw="px-2  hover:text-blue-800">
-                        <a href="https://maps.app.goo.gl/6Vi9jZSXeqPbxg6d6">
+                        <a
+                          href="https://maps.app.goo.gl/6Vi9jZSXeqPbxg6d6"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
                           <AssistantDirectionIcon fontSize="medium"></AssistantDirectionIcon>
                         </a>
                       </div>
@@ -313,18 +319,13 @@ const Home = () => {
                         Se encuentra cerca de la finca pero no se recomienda ir
                         andando ya que hay que dar bastante vuelta.
                       </p>
-                      <p tw="pt-2">Precio aprox. 106€/noche.</p>
+                      <p tw="pt-2">Precio aprox. 150€/noche.</p>
                       <p>TBC</p>
-                      <p tw="pt-2">
-                        Cuando reserveis,{' '}
-                        <u>acordaos de informar que vais a nuestra boda</u> para
-                        que os apliquen el precio especial.
-                      </p>
                     </div>
                   </motion.div>
                 )}
               </div>
-              <div tw="border border-primary-100 shadow-md py-2 rounded-lg w-full hover:ring-2 ring-secondary-200">
+              <div tw="border border-primary-100 shadow-md py-2 rounded-lg w-full hover:ring-2 ring-secondary-200 bg-bg-200">
                 <div
                   tw="px-2 pt-1 flex gap-1"
                   onClick={() => setIsOpen4((prev) => !prev)}
@@ -391,13 +392,17 @@ const Home = () => {
                         <DirectionsCarIcon></DirectionsCarIcon> 7 min{' '}
                       </div>
                       <div tw="px-2  hover:text-blue-800">
-                        <a href="https://maps.app.goo.gl/9eMEE5LemBG2Tm1x5">
+                        <a
+                          href="https://maps.app.goo.gl/9eMEE5LemBG2Tm1x5"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
                           <AssistantDirectionIcon fontSize="medium"></AssistantDirectionIcon>
                         </a>
                       </div>
                     </div>
                     <div tw="pt-2">
-                      <p>Hotel cerca a 5 minutos del acueducto.</p>
+                      <p>Hotel a 5 minutos del acueducto.</p>
                       <p tw="pt-2">Precio aprox. 999€/noche.</p>
                       <p>TBC</p>
                       <p tw="pt-2">
@@ -409,7 +414,7 @@ const Home = () => {
                   </motion.div>
                 )}
               </div>
-              <div tw="border border-primary-100 shadow-md py-2 rounded-lg w-full hover:ring-2 ring-secondary-200">
+              <div tw="border border-primary-100 shadow-md py-2 rounded-lg w-full hover:ring-2 ring-secondary-200 bg-bg-200">
                 <div
                   tw="px-2 pt-1 flex gap-1"
                   onClick={() => setIsOpen5((prev) => !prev)}
@@ -482,7 +487,11 @@ const Home = () => {
                         <DirectionsCarIcon></DirectionsCarIcon> 6 min{' '}
                       </div>
                       <div tw="px-2  hover:text-blue-800">
-                        <a href="https://maps.app.goo.gl/JB722YQSFVF7vLpBA">
+                        <a
+                          href="https://maps.app.goo.gl/JB722YQSFVF7vLpBA"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
                           <AssistantDirectionIcon fontSize="medium"></AssistantDirectionIcon>
                         </a>
                       </div>
@@ -500,7 +509,7 @@ const Home = () => {
                   </motion.div>
                 )}
               </div>
-              <div tw="border border-primary-100 shadow-md py-2 rounded-lg w-full hover:ring-2 ring-secondary-200">
+              <div tw="border border-primary-100 shadow-md py-2 rounded-lg w-full hover:ring-2 ring-secondary-200 bg-bg-200">
                 <div
                   tw="px-2 pt-1 flex gap-1"
                   onClick={() => setIsOpen6((prev) => !prev)}
@@ -509,7 +518,7 @@ const Home = () => {
                     {!isOpen6 ? <AddIcon></AddIcon> : <RemoveIcon></RemoveIcon>}
                   </motion.div>
                   <p tw="text-xl font-bold">
-                    Hotel Eurostars Plaza Acueducto &nbsp;
+                    Eurostars Plaza Acueducto &nbsp;
                     <img
                       src="/star.png"
                       alt=""
@@ -579,7 +588,11 @@ const Home = () => {
                         <DirectionsCarIcon></DirectionsCarIcon> 6 min{' '}
                       </div>
                       <div tw="px-2  hover:text-blue-800">
-                        <a href="https://maps.app.goo.gl/jgwFmTs4ivCPEBQ77">
+                        <a
+                          href="https://maps.app.goo.gl/jgwFmTs4ivCPEBQ77"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
                           <AssistantDirectionIcon fontSize="medium"></AssistantDirectionIcon>
                         </a>
                       </div>
@@ -604,15 +617,210 @@ const Home = () => {
           </div>
           <div tw="flex flex-col items-center gap-5 text-primary-400">
             <p tw="text-4xl font-bold">Bares y Restaurantes</p>
-            <p tw="">Todos</p>
+            <ul className="bulleted">
+              <p tw="underline">Bares:</p>
+              <li>
+                <div tw="flex">
+                  <p tw="pt-1">El Sitio</p>
+                  <div tw="px-2  hover:text-blue-800">
+                    <a
+                      href="https://maps.app.goo.gl/oUmYrkHE5Xk7cLf18"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <AssistantDirectionIcon fontSize="medium"></AssistantDirectionIcon>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div tw="flex">
+                  <p tw="pt-1">El Cochifrito</p>
+                  <div tw="px-2  hover:text-blue-800">
+                    <a
+                      href="https://maps.app.goo.gl/TcakwvKWmDf6uaQ37"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <AssistantDirectionIcon fontSize="medium"></AssistantDirectionIcon>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div tw="flex">
+                  <p tw="pt-1">Cafés la Colonial</p>
+                  <div tw="px-2  hover:text-blue-800">
+                    <a
+                      href="https://maps.app.goo.gl/u4bytwNh9nT38FMJ8"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <AssistantDirectionIcon fontSize="medium"></AssistantDirectionIcon>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div tw="flex">
+                  <p tw="pt-1">Taberna Las Cuevas de Duque</p>
+                  <div tw="px-2  hover:text-blue-800">
+                    <a
+                      href="https://maps.app.goo.gl/32Phf2hMMHo2Amdz8"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <AssistantDirectionIcon fontSize="medium"></AssistantDirectionIcon>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div tw="flex">
+                  <p tw="pt-1">La Casona de San Martín</p>
+                  <div tw="px-2  hover:text-blue-800">
+                    <a
+                      href="https://maps.app.goo.gl/ZCUhBBMWQ9qXYPkf7"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <AssistantDirectionIcon fontSize="medium"></AssistantDirectionIcon>
+                    </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <ul className="bulleted">
+              <p tw="underline">Restaurantes:</p>
+
+              <li>
+                <div tw="flex">
+                  <p tw="pt-1">José María</p>
+                  <div tw="px-2  hover:text-blue-800">
+                    <a
+                      href="https://maps.app.goo.gl/ALMDUya74LRwZDC58"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <AssistantDirectionIcon fontSize="medium"></AssistantDirectionIcon>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div tw="flex">
+                  <p tw="pt-1">El Bernardino</p>
+                  <div tw="px-2  hover:text-blue-800">
+                    <a
+                      href="https://maps.app.goo.gl/aHjrNQFGbDDY2QNo9"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <AssistantDirectionIcon fontSize="medium"></AssistantDirectionIcon>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div tw="flex">
+                  <p tw="pt-1">El Redebal</p>
+                  <div tw="px-2  hover:text-blue-800">
+                    <a
+                      href="https://maps.app.goo.gl/XzdeZMokMjFiZbzaA"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <AssistantDirectionIcon fontSize="medium"></AssistantDirectionIcon>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div tw="flex">
+                  <p tw="pt-1">Casares</p>
+                  <div tw="px-2  hover:text-blue-800">
+                    <a
+                      href="https://maps.app.goo.gl/NRk8aWpCxvgxtXMs5"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <AssistantDirectionIcon fontSize="medium"></AssistantDirectionIcon>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div tw="flex">
+                  <p tw="pt-1">El Secreto de San Clemente</p>
+                  <div tw="px-2  hover:text-blue-800">
+                    <a
+                      href="https://maps.app.goo.gl/cSSrtG6EG7ke2AyJ9"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <AssistantDirectionIcon fontSize="medium"></AssistantDirectionIcon>
+                    </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
           <div tw="my-5 ">
             <img src="/separator.svg" alt="" tw="mx-auto" />
           </div>
           <div tw="flex flex-col items-center gap-5 text-primary-400">
             <p tw="text-4xl font-bold">Salir de fiesta</p>
-            <p tw="">Teatre</p>
-            <p tw="">Mandala</p>
+            <p tw="px-11 text-center">
+              En Segovia la zona de fiesta se encuentra cerca de la Plaza Mayor.
+            </p>
+            <div tw="">
+              <ul className="bulleted">
+                <li>
+                  <div tw="flex">
+                    <p tw="pt-1">Vogue (bar de copas)</p>
+                    <div tw="px-2  hover:text-blue-800">
+                      <a
+                        href="https://maps.app.goo.gl/raWpcqdPPkkptsko9"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <AssistantDirectionIcon fontSize="medium"></AssistantDirectionIcon>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div tw="flex">
+                    <p tw="pt-1">Mandala (dicoteca)</p>
+                    <div tw="px-2  hover:text-blue-800">
+                      <a
+                        href="https://maps.app.goo.gl/8dyAbFk2DSwLLYtR8"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <AssistantDirectionIcon fontSize="medium"></AssistantDirectionIcon>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div tw="flex">
+                    <p tw="pt-1">Theatre (dicoteca)</p>
+                    <div tw="px-2  hover:text-blue-800">
+                      <a
+                        href="https://maps.app.goo.gl/EjHKceYJyS6XoaPUA"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <AssistantDirectionIcon fontSize="medium"></AssistantDirectionIcon>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <p tw=""></p>
+            <p tw=""></p>
           </div>
         </div>
       </AnimatePresence>

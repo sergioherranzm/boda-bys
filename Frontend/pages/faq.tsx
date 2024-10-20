@@ -12,6 +12,10 @@ const Home = () => {
   const [isOpen4, setIsOpen4] = useState(false);
   const [isOpen5, setIsOpen5] = useState(false);
   const [isOpen6, setIsOpen6] = useState(false);
+  const [isOpen7, setIsOpen7] = useState(false);
+  const [isOpen8, setIsOpen8] = useState(false);
+  const [isOpen9, setIsOpen9] = useState(false);
+  const [isOpen10, setIsOpen10] = useState(false);
 
   return (
     <>
@@ -20,7 +24,7 @@ const Home = () => {
           tw="flex flex-col items-center justify-center container mx-auto py-2 px-1 gap-y-1"
           className="solitreo-regular"
         >
-          <div tw="border border-primary-100 shadow-md py-2 rounded-lg w-full hover:ring-2 ring-secondary-200">
+          <div tw="border border-primary-100 shadow-md py-2 rounded-lg w-full hover:ring-2 ring-secondary-200 bg-bg-200">
             <div
               tw="px-2 pt-1 flex gap-1"
               onClick={() => setIsOpen1((prev) => !prev)}
@@ -76,7 +80,12 @@ const Home = () => {
                     <a tw="text-blue-600" href="tel:+34618111034">
                       <PhoneIcon fontSize="large"></PhoneIcon>
                     </a>{' '}
-                    <a tw="text-green-600" href="https://wa.me/618111034">
+                    <a
+                      tw="text-green-600"
+                      href="https://wa.me/618111034"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <WhatsAppIcon fontSize="large"></WhatsAppIcon>
                     </a>
                   </li>
@@ -85,7 +94,12 @@ const Home = () => {
                     <a tw="text-blue-600" href="tel:+34675634437">
                       <PhoneIcon fontSize="large"></PhoneIcon>
                     </a>{' '}
-                    <a tw="text-green-600" href="https://wa.me/675634437">
+                    <a
+                      tw="text-green-600"
+                      href="https://wa.me/675634437"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <WhatsAppIcon fontSize="large"></WhatsAppIcon>
                     </a>
                   </li>
@@ -93,7 +107,7 @@ const Home = () => {
               </motion.div>
             )}
           </div>
-          <div tw="border border-primary-100 shadow-md py-2 rounded-lg w-full hover:ring-2 ring-secondary-200">
+          {/*<div tw="border border-primary-100 shadow-md py-2 rounded-lg w-full hover:ring-2 ring-secondary-200 bg-bg-200">
             <div
               tw="px-2 pt-1 flex gap-1"
               onClick={() => setIsOpen2((prev) => !prev)}
@@ -146,8 +160,8 @@ const Home = () => {
                 </p>
               </motion.div>
             )}
-          </div>
-          <div tw="border border-primary-100 shadow-md py-2 rounded-lg w-full hover:ring-2 ring-secondary-200">
+              </div>*/}
+          {/*<div tw="border border-primary-100 shadow-md py-2 rounded-lg w-full hover:ring-2 ring-secondary-200 bg-bg-200">
             <div
               tw="px-2 pt-1 flex gap-1"
               onClick={() => setIsOpen3((prev) => !prev)}
@@ -202,8 +216,8 @@ const Home = () => {
                 </p>
               </motion.div>
             )}
-          </div>
-          <div tw="border border-primary-100 shadow-md py-2 rounded-lg w-full hover:ring-2 ring-secondary-200">
+              </div>*/}
+          <div tw="border border-primary-100 shadow-md py-2 rounded-lg w-full hover:ring-2 ring-secondary-200 bg-bg-200">
             <div
               tw="px-2 pt-1 flex gap-1"
               onClick={() => setIsOpen4((prev) => !prev)}
@@ -263,7 +277,7 @@ const Home = () => {
               </motion.div>
             )}
           </div>
-          <div tw="border border-primary-100 shadow-md py-2 rounded-lg w-full hover:ring-2 ring-secondary-200">
+          <div tw="border border-primary-100 shadow-md py-2 rounded-lg w-full hover:ring-2 ring-secondary-200 bg-bg-200">
             <div
               tw="px-2 pt-1 flex gap-1"
               onClick={() => setIsOpen5((prev) => !prev)}
@@ -312,8 +326,8 @@ const Home = () => {
               >
                 <p>
                   En la sección de{' '}
-                  <a tw="underline" href="/logistica">
-                    recomendaciones
+                  <a tw="underline cursor-pointer" href="/boda#transporte">
+                    La Boda
                   </a>{' '}
                   puedes encontrar las ditintas opciones de transporte y
                   aparcamiento.
@@ -321,7 +335,7 @@ const Home = () => {
               </motion.div>
             )}
           </div>
-          <div tw="border border-primary-100 shadow-md py-2 rounded-lg w-full hover:ring-2 ring-secondary-200">
+          <div tw="border border-primary-100 shadow-md py-2 rounded-lg w-full hover:ring-2 ring-secondary-200 bg-bg-200">
             <div
               tw="px-2 pt-1 flex gap-1"
               onClick={() => setIsOpen6((prev) => !prev)}
@@ -375,6 +389,63 @@ const Home = () => {
                   aire libre, la comida en el interior de los salones, y para la
                   fiesta estaremos en el jardín con carpa.
                 </p>
+              </motion.div>
+            )}
+          </div>
+          <div tw="border border-primary-100 shadow-md py-2 rounded-lg w-full hover:ring-2 ring-secondary-200 bg-bg-200">
+            <div
+              tw="px-2 pt-1 flex gap-1"
+              onClick={() => setIsOpen7((prev) => !prev)}
+            >
+              <motion.div>
+                {!isOpen7 ? <AddIcon></AddIcon> : <RemoveIcon></RemoveIcon>}
+              </motion.div>
+              <p tw="text-xl font-bold">¿Hay Pre-boda?</p>
+            </div>
+
+            {!isOpen7 ? (
+              <div></div>
+            ) : (
+              <motion.div
+                initial={{
+                  height: 0,
+                  opacity: 0,
+                }}
+                animate={{
+                  height: 'auto',
+                  opacity: 1,
+                  transition: {
+                    height: {
+                      duration: 0.4,
+                    },
+                    opacity: {
+                      duration: 0.25,
+                      delay: 0.15,
+                    },
+                  },
+                }}
+                exit={{
+                  height: 0,
+                  opacity: 0,
+                  transition: {
+                    height: {
+                      duration: 0.4,
+                    },
+                    opacity: {
+                      duration: 0.25,
+                    },
+                  },
+                }}
+                className="font-light"
+                tw="ml-10 mt-2"
+              >
+                <p>
+                  No está definido todavía. Actualizaremos esta sección cuando
+                  tengamos más noticias.
+                </p>
+                {/*<a tw="underline cursor-pointer" href="/preboda">
+                  Ver información de "La Previa"
+                  </a>*/}
               </motion.div>
             )}
           </div>

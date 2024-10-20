@@ -5,7 +5,7 @@ export const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   return (
-    <div tw="flex items-center border-b border-gray-400 px-4 w-screen sticky top-0 bg-bg-100">
+    <div tw="flex items-center border-b border-gray-400 px-4 w-screen sticky top-0 bg-bg-100 z-50">
       <nav tw="w-screen">
         <section tw="flex items-center w-full py-1 lg:hidden">
           <div tw="space-y-2" onClick={() => setIsNavOpen((prev) => !prev)}>
@@ -135,7 +135,7 @@ export const Navbar = () => {
         height: 100vh;
         top: 0;
         left: 0;
-        z-index: 10;
+        z-index: 100;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;

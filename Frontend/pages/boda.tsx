@@ -44,6 +44,8 @@ const Home = () => {
             </div>
             <a
               href="https://maps.app.goo.gl/Cxipa5xk8sJJZnDC8"
+              target="_blank"
+              rel="noopener noreferrer"
               tw="cursor-pointer px-4 pt-1 rounded-xl bg-primary-300 text-white hover:bg-primary-100"
             >
               Ver en Google Maps
@@ -58,15 +60,6 @@ const Home = () => {
           >
             <p tw="text-4xl font-bold text-center">Cómo llegar</p>
             <div tw="">
-              {/*<p tw="inline">
-                Puedes ver recomendaciones de transporte en al sección de
-              </p>{' '}&nbsp;
-              <a
-                href="/logistica#transporte"
-                tw="inline underline cursor-pointer hover:text-secondary-400"
-              >
-                Recomendaciones
-              </a>*/}
               <ul tw="pl-4" className="bulleted">
                 <li>
                   <p tw="text-xl font-bold inline">Coche:</p>
@@ -101,6 +94,8 @@ const Home = () => {
                   <p tw="pl-10">
                     <a
                       href="https://infosegovia.com/linea-4-carretera-de-soria-hospital-general/"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       tw="cursor-pointer  text-blue-800 hover:text-secondary-400"
                     >
                       Línea 4
@@ -109,6 +104,8 @@ const Home = () => {
                   </p>
                   <a
                     href="https://maps.app.goo.gl/AgbyDmaKoi8MRfSe6"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     tw="pl-10 underline cursor-pointer hover:text-secondary-400"
                   >
                     Ver ruta
@@ -120,6 +117,8 @@ const Home = () => {
                   <p tw="pl-10">
                     <a
                       href="https://infosegovia.com/linea-b-buho/"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       tw="cursor-pointer  text-blue-800 hover:text-secondary-400"
                     >
                       Línea B
