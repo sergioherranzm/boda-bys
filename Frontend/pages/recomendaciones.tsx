@@ -12,15 +12,13 @@ const Home = () => {
   const [isOpen2, setIsOpen2] = useState(false);
   const [isOpen3, setIsOpen3] = useState(false);
   const [isOpen4, setIsOpen4] = useState(false);
-  const [isOpen5, setIsOpen5] = useState(false);
-  const [isOpen6, setIsOpen6] = useState(false);
 
   return (
     <>
       <AnimatePresence mode="wait">
         <div tw="grid grid-cols-1" className="solitreo-regular">
           <div tw="mt-5 flex flex-col items-center" id="alojamiento">
-            <p tw="text-4xl font-bold">Alojamiento</p>
+            <p tw="text-4xl font-bold">Alojamientos</p>
             <div tw="container my-1 p-1 grid grid-cols-1 gap-y-1">
               <div tw="border border-primary-100 shadow-md py-2 rounded-lg w-full hover:ring-2 ring-secondary-200 bg-bg-200">
                 <div
@@ -45,6 +43,17 @@ const Home = () => {
                       tw="inline"
                     />
                   </p>
+                  <div tw="px-2 ml-auto hover:text-blue-800">
+                    <a
+                      href="https://maps.app.goo.gl/mhdLD6V1Dyo7ehuE6"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <AssistantDirectionIcon
+                        sx={{ fontSize: 29 }}
+                      ></AssistantDirectionIcon>
+                    </a>
+                  </div>
                 </div>
                 {!isOpen1 ? (
                   <div></div>
@@ -87,15 +96,6 @@ const Home = () => {
                         <SignpostIcon></SignpostIcon> 0 m /{' '}
                         <DirectionsWalkIcon></DirectionsWalkIcon> 0 min /{' '}
                         <DirectionsCarIcon></DirectionsCarIcon> 0 min{' '}
-                      </div>
-                      <div tw="px-2  hover:text-blue-800">
-                        <a
-                          href="https://maps.app.goo.gl/mhdLD6V1Dyo7ehuE6"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <AssistantDirectionIcon fontSize="medium"></AssistantDirectionIcon>
-                        </a>
                       </div>
                     </div>
                     <div tw="pt-2">
@@ -165,6 +165,17 @@ const Home = () => {
                       tw="inline"
                     />
                   </p>
+                  <div tw="px-2 ml-auto hover:text-blue-800">
+                    <a
+                      href="https://maps.app.goo.gl/VDUxW94uv1ExC99E6"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <AssistantDirectionIcon
+                        sx={{ fontSize: 29 }}
+                      ></AssistantDirectionIcon>
+                    </a>
+                  </div>
                 </div>
                 {!isOpen2 ? (
                   <div></div>
@@ -208,20 +219,24 @@ const Home = () => {
                         <DirectionsWalkIcon></DirectionsWalkIcon> 5 min /{' '}
                         <DirectionsCarIcon></DirectionsCarIcon> 1 min{' '}
                       </div>
-                      <div tw="px-2  hover:text-blue-800">
-                        <a
-                          href="https://maps.app.goo.gl/VDUxW94uv1ExC99E6"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <AssistantDirectionIcon fontSize="medium"></AssistantDirectionIcon>
-                        </a>
-                      </div>
                     </div>
                     <div tw="pt-2">
                       <p>Hotel de 4 estrellas muy cerca de la finca.</p>
-                      <p tw="pt-2">Precio aprox. 100€/noche.</p>
-                      <p>TBC</p>
+                      <ul tw="pt-2" className="bulleted-inside">
+                        El precio aproximado por noche es:
+                        <li tw="">
+                          Habitación Doble (para 1 ó 2 personas): <b>100 €</b>
+                        </li>
+                        <li tw="">
+                          Habitación Doble con desayuno: <b>120 €</b>
+                        </li>
+                        <li tw="">
+                          Habitación Triple: <b>120 €</b>
+                        </li>
+                        <li tw="">
+                          Habitación Triple con desayuno: <b>150 €</b>
+                        </li>
+                      </ul>
                     </div>
                   </motion.div>
                 )}
@@ -235,7 +250,7 @@ const Home = () => {
                     {!isOpen3 ? <AddIcon></AddIcon> : <RemoveIcon></RemoveIcon>}
                   </motion.div>
                   <p tw="text-xl font-bold">
-                    Parador de Segovia &nbsp;
+                    Eurostars Acueducto &nbsp;
                     <img
                       src="/star.png"
                       alt=""
@@ -261,291 +276,19 @@ const Home = () => {
                       tw="inline"
                     />
                   </p>
+                  <div tw="px-2 ml-auto hover:text-blue-800">
+                    <a
+                      href="https://maps.app.goo.gl/jgwFmTs4ivCPEBQ77"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <AssistantDirectionIcon
+                        sx={{ fontSize: 29 }}
+                      ></AssistantDirectionIcon>
+                    </a>
+                  </div>
                 </div>
                 {!isOpen3 ? (
-                  <div></div>
-                ) : (
-                  <motion.div
-                    initial={{
-                      height: 0,
-                      opacity: 0,
-                    }}
-                    animate={{
-                      height: 'auto',
-                      opacity: 1,
-                      transition: {
-                        height: {
-                          duration: 0.4,
-                        },
-                        opacity: {
-                          duration: 0.25,
-                          delay: 0.15,
-                        },
-                      },
-                    }}
-                    exit={{
-                      height: 0,
-                      opacity: 0,
-                      transition: {
-                        height: {
-                          duration: 0.4,
-                        },
-                        opacity: {
-                          duration: 0.25,
-                        },
-                      },
-                    }}
-                    className="font-light"
-                    tw="mt-2 pl-3 pr-1"
-                  >
-                    <div tw="flex justify-between">
-                      <div>
-                        <SignpostIcon></SignpostIcon> 2,2 km /{' '}
-                        <DirectionsWalkIcon></DirectionsWalkIcon> 30 min /{' '}
-                        <DirectionsCarIcon></DirectionsCarIcon> 4 min{' '}
-                      </div>
-                      <div tw="px-2  hover:text-blue-800">
-                        <a
-                          href="https://maps.app.goo.gl/6Vi9jZSXeqPbxg6d6"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <AssistantDirectionIcon fontSize="medium"></AssistantDirectionIcon>
-                        </a>
-                      </div>
-                    </div>
-                    <div tw="pt-2">
-                      <p>
-                        Se encuentra cerca de la finca pero no se recomienda ir
-                        andando ya que hay que dar bastante vuelta.
-                      </p>
-                      <p tw="pt-2">Precio aprox. 150€/noche.</p>
-                      <p>TBC</p>
-                    </div>
-                  </motion.div>
-                )}
-              </div>
-              <div tw="border border-primary-100 shadow-md py-2 rounded-lg w-full hover:ring-2 ring-secondary-200 bg-bg-200">
-                <div
-                  tw="px-2 pt-1 flex gap-1"
-                  onClick={() => setIsOpen4((prev) => !prev)}
-                >
-                  <motion.div>
-                    {!isOpen4 ? <AddIcon></AddIcon> : <RemoveIcon></RemoveIcon>}
-                  </motion.div>
-                  <p tw="text-xl font-bold">
-                    Palacio de La Floresta &nbsp;
-                    <img
-                      src="/star.png"
-                      alt=""
-                      style={{ height: '20px' }}
-                      tw="inline"
-                    />{' '}
-                    <img
-                      src="/star.png"
-                      alt=""
-                      style={{ height: '20px' }}
-                      tw="inline"
-                    />
-                  </p>
-                </div>
-                {!isOpen4 ? (
-                  <div></div>
-                ) : (
-                  <motion.div
-                    initial={{
-                      height: 0,
-                      opacity: 0,
-                    }}
-                    animate={{
-                      height: 'auto',
-                      opacity: 1,
-                      transition: {
-                        height: {
-                          duration: 0.4,
-                        },
-                        opacity: {
-                          duration: 0.25,
-                          delay: 0.15,
-                        },
-                      },
-                    }}
-                    exit={{
-                      height: 0,
-                      opacity: 0,
-                      transition: {
-                        height: {
-                          duration: 0.4,
-                        },
-                        opacity: {
-                          duration: 0.25,
-                        },
-                      },
-                    }}
-                    className="font-light"
-                    tw="mt-2 pl-3 pr-1"
-                  >
-                    <div tw="flex justify-between">
-                      <div>
-                        <SignpostIcon></SignpostIcon> 2,5 km /{' '}
-                        <DirectionsWalkIcon></DirectionsWalkIcon> 36 min /{' '}
-                        <DirectionsCarIcon></DirectionsCarIcon> 7 min{' '}
-                      </div>
-                      <div tw="px-2  hover:text-blue-800">
-                        <a
-                          href="https://maps.app.goo.gl/9eMEE5LemBG2Tm1x5"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <AssistantDirectionIcon fontSize="medium"></AssistantDirectionIcon>
-                        </a>
-                      </div>
-                    </div>
-                    <div tw="pt-2">
-                      <p>Hotel a 5 minutos del acueducto.</p>
-                      <p tw="pt-2">Precio aprox. 999€/noche.</p>
-                      <p>TBC</p>
-                      <p tw="pt-2">
-                        Cuando reserveis,{' '}
-                        <u>acordaos de informar que vais a nuestra boda</u> para
-                        que os apliquen el precio especial.
-                      </p>
-                    </div>
-                  </motion.div>
-                )}
-              </div>
-              <div tw="border border-primary-100 shadow-md py-2 rounded-lg w-full hover:ring-2 ring-secondary-200 bg-bg-200">
-                <div
-                  tw="px-2 pt-1 flex gap-1"
-                  onClick={() => setIsOpen5((prev) => !prev)}
-                >
-                  <motion.div>
-                    {!isOpen5 ? <AddIcon></AddIcon> : <RemoveIcon></RemoveIcon>}
-                  </motion.div>
-                  <p tw="text-xl font-bold">
-                    Hospedaje San Francisco &nbsp;
-                    <img
-                      src="/star.png"
-                      alt=""
-                      style={{ height: '20px' }}
-                      tw="inline"
-                    />{' '}
-                    <img
-                      src="/star.png"
-                      alt=""
-                      style={{ height: '20px' }}
-                      tw="inline"
-                    />{' '}
-                    <img
-                      src="/star.png"
-                      alt=""
-                      style={{ height: '20px' }}
-                      tw="inline"
-                    />
-                  </p>
-                </div>
-                {!isOpen5 ? (
-                  <div></div>
-                ) : (
-                  <motion.div
-                    initial={{
-                      height: 0,
-                      opacity: 0,
-                    }}
-                    animate={{
-                      height: 'auto',
-                      opacity: 1,
-                      transition: {
-                        height: {
-                          duration: 0.4,
-                        },
-                        opacity: {
-                          duration: 0.25,
-                          delay: 0.15,
-                        },
-                      },
-                    }}
-                    exit={{
-                      height: 0,
-                      opacity: 0,
-                      transition: {
-                        height: {
-                          duration: 0.4,
-                        },
-                        opacity: {
-                          duration: 0.25,
-                        },
-                      },
-                    }}
-                    className="font-light"
-                    tw="mt-2 pl-3 pr-1"
-                  >
-                    <div tw="flex justify-between">
-                      <div>
-                        <SignpostIcon></SignpostIcon> 2,4 km /{' '}
-                        <DirectionsWalkIcon></DirectionsWalkIcon> 34 min /{' '}
-                        <DirectionsCarIcon></DirectionsCarIcon> 6 min{' '}
-                      </div>
-                      <div tw="px-2  hover:text-blue-800">
-                        <a
-                          href="https://maps.app.goo.gl/JB722YQSFVF7vLpBA"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <AssistantDirectionIcon fontSize="medium"></AssistantDirectionIcon>
-                        </a>
-                      </div>
-                    </div>
-                    <div tw="pt-2">
-                      <p>Hospedaje modesto muy cerca del acueducto.</p>
-                      <p tw="pt-2">Precio aprox. 999€/noche.</p>
-                      <p>TBC</p>
-                      <p tw="pt-2">
-                        Cuando reserveis,{' '}
-                        <u>acordaos de informar que vais a nuestra boda</u> para
-                        que os apliquen el precio especial.
-                      </p>
-                    </div>
-                  </motion.div>
-                )}
-              </div>
-              <div tw="border border-primary-100 shadow-md py-2 rounded-lg w-full hover:ring-2 ring-secondary-200 bg-bg-200">
-                <div
-                  tw="px-2 pt-1 flex gap-1"
-                  onClick={() => setIsOpen6((prev) => !prev)}
-                >
-                  <motion.div>
-                    {!isOpen6 ? <AddIcon></AddIcon> : <RemoveIcon></RemoveIcon>}
-                  </motion.div>
-                  <p tw="text-xl font-bold">
-                    Eurostars Plaza Acueducto &nbsp;
-                    <img
-                      src="/star.png"
-                      alt=""
-                      style={{ height: '20px' }}
-                      tw="inline"
-                    />{' '}
-                    <img
-                      src="/star.png"
-                      alt=""
-                      style={{ height: '20px' }}
-                      tw="inline"
-                    />{' '}
-                    <img
-                      src="/star.png"
-                      alt=""
-                      style={{ height: '20px' }}
-                      tw="inline"
-                    />{' '}
-                    <img
-                      src="/star.png"
-                      alt=""
-                      style={{ height: '20px' }}
-                      tw="inline"
-                    />
-                  </p>
-                </div>
-                {!isOpen6 ? (
                   <div></div>
                 ) : (
                   <motion.div
@@ -587,25 +330,126 @@ const Home = () => {
                         <DirectionsWalkIcon></DirectionsWalkIcon> 33 min /{' '}
                         <DirectionsCarIcon></DirectionsCarIcon> 6 min{' '}
                       </div>
-                      <div tw="px-2  hover:text-blue-800">
-                        <a
-                          href="https://maps.app.goo.gl/jgwFmTs4ivCPEBQ77"
-                          target="_blank"
-                          rel="noopener noreferrer"
+                    </div>
+                    <div tw="pt-2">
+                      <p>Hotel de 4 estrellas con vistas al acueducto.</p>{' '}
+                      <p tw="pt-2">
+                        El precio aproximado por noche para la habitación doble
+                        es de <b>150 €</b>.
+                      </p>
+                      <p tw="pt-2">
+                        Podeis introducir el código{' '}
+                        <span
+                          tw="hover:text-blue-800"
+                          onClick={() => {
+                            navigator.clipboard.writeText('ENLACEBYS');
+                          }}
                         >
-                          <AssistantDirectionIcon fontSize="medium"></AssistantDirectionIcon>
-                        </a>
+                          <b>ENLACEBYS</b>
+                        </span>{' '}
+                        cuando reservéis a través de la web para que os apliquen
+                        un 15% de descuento (sólo aplicable a la tarifa de
+                        Cancelación Gratuita).
+                      </p>
+                      <p tw="pt-2">
+                        El código solo estará disponibles hasta el 27 de Julio.
+                      </p>
+                    </div>
+                  </motion.div>
+                )}
+              </div>
+              <div tw="border border-primary-100 shadow-md py-2 rounded-lg w-full hover:ring-2 ring-secondary-200 bg-bg-200">
+                <div
+                  tw="px-2 pt-1 flex gap-1"
+                  onClick={() => setIsOpen4((prev) => !prev)}
+                >
+                  <motion.div>
+                    {!isOpen4 ? <AddIcon></AddIcon> : <RemoveIcon></RemoveIcon>}
+                  </motion.div>
+                  <p tw="text-xl font-bold">
+                    Hotel ELE Acueducto &nbsp;
+                    <img
+                      src="/star.png"
+                      alt=""
+                      style={{ height: '20px' }}
+                      tw="inline"
+                    />{' '}
+                    <img
+                      src="/star.png"
+                      alt=""
+                      style={{ height: '20px' }}
+                      tw="inline"
+                    />{' '}
+                    <img
+                      src="/star.png"
+                      alt=""
+                      style={{ height: '20px' }}
+                      tw="inline"
+                    />
+                  </p>
+                  <div tw="px-2 ml-auto hover:text-blue-800">
+                    <a
+                      href="https://maps.app.goo.gl/oWj2PLp4NkyKdNqi9"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <AssistantDirectionIcon
+                        sx={{ fontSize: 29 }}
+                      ></AssistantDirectionIcon>
+                    </a>
+                  </div>
+                </div>
+                {!isOpen4 ? (
+                  <div></div>
+                ) : (
+                  <motion.div
+                    initial={{
+                      height: 0,
+                      opacity: 0,
+                    }}
+                    animate={{
+                      height: 'auto',
+                      opacity: 1,
+                      transition: {
+                        height: {
+                          duration: 0.4,
+                        },
+                        opacity: {
+                          duration: 0.25,
+                          delay: 0.15,
+                        },
+                      },
+                    }}
+                    exit={{
+                      height: 0,
+                      opacity: 0,
+                      transition: {
+                        height: {
+                          duration: 0.4,
+                        },
+                        opacity: {
+                          duration: 0.25,
+                        },
+                      },
+                    }}
+                    className="font-light"
+                    tw="mt-2 pl-3 pr-1"
+                  >
+                    <div tw="flex justify-between">
+                      <div>
+                        <SignpostIcon></SignpostIcon> 2,2 km /{' '}
+                        <DirectionsWalkIcon></DirectionsWalkIcon> 32 min /{' '}
+                        <DirectionsCarIcon></DirectionsCarIcon> 5 min{' '}
                       </div>
                     </div>
                     <div tw="pt-2">
-                      <p>Hotel de 4 estrellas con vistas al acueducto.</p>
-                      <p tw="pt-2">Precio aprox. 999€/noche.</p>
-                      <p>TBC</p>
-                      <p tw="pt-2">
-                        Cuando reserveis,{' '}
-                        <u>acordaos de informar que vais a nuestra boda</u> para
-                        que os apliquen el precio especial.
-                      </p>
+                      <p>Hotel modesto cerca del acueducto.</p>
+                      <ul tw="pt-2" className="bulleted-inside">
+                        El precio aproximado por noche es:
+                        <li tw="">
+                          Habitación Doble (sin desayuno): <b>100 €</b>
+                        </li>
+                      </ul>
                     </div>
                   </motion.div>
                 )}
@@ -649,7 +493,7 @@ const Home = () => {
               </li>
               <li>
                 <div tw="flex">
-                  <p tw="pt-1">Cafés la Colonial</p>
+                  <p tw="pt-1">Cafés la Colonial (cafetería)</p>
                   <div tw="px-2  hover:text-blue-800">
                     <a
                       href="https://maps.app.goo.gl/u4bytwNh9nT38FMJ8"
@@ -791,7 +635,7 @@ const Home = () => {
                 </li>
                 <li>
                   <div tw="flex">
-                    <p tw="pt-1">Mandala (dicoteca)</p>
+                    <p tw="pt-1">Mandala (discoteca)</p>
                     <div tw="px-2  hover:text-blue-800">
                       <a
                         href="https://maps.app.goo.gl/8dyAbFk2DSwLLYtR8"
@@ -805,7 +649,7 @@ const Home = () => {
                 </li>
                 <li>
                   <div tw="flex">
-                    <p tw="pt-1">Theatre (dicoteca)</p>
+                    <p tw="pt-1">Theatre (discoteca)</p>
                     <div tw="px-2  hover:text-blue-800">
                       <a
                         href="https://maps.app.goo.gl/EjHKceYJyS6XoaPUA"

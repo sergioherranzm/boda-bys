@@ -44,7 +44,7 @@ const Home = () => {
             <img tw="" src="/wantu.jpeg" alt="foto" />
             <div tw="absolute top-16">
               <p tw="text-orange-500 font-bold text-3xl inline">WE WANT </p>
-              <p tw="text-red-700 font-bold text-4xl inline border ">YOU!</p>
+              <p tw="text-red-700 font-bold text-4xl inline">YOU!</p>
             </div>
             <div tw="absolute bottom-16">
               <p tw="text-orange-500 font-bold text-3xl">FOR</p>{' '}

@@ -70,10 +70,10 @@ export const Navbar = () => {
                 <a href="/boda">La Boda</a>
               </li>
               <li tw="border-b border-gray-400 my-6 uppercase">
-                <a href="/logistica">Recomendaciones</a>
+                <a href="/recomendaciones">Recomendaciones</a>
               </li>
               <li tw="border-b border-gray-400 my-6 uppercase">
-                <a href="/lista">Regalos</a>
+                <a href="/regalos">Regalos</a>
               </li>
               <li tw="border-b border-gray-400 my-6 uppercase">
                 <a href="/faq">Preguntas Frecuentes</a>
@@ -100,10 +100,10 @@ export const Navbar = () => {
                 <a href="/boda">La Boda</a>
               </li>
               <li tw="px-2 rounded hover:underline hover:bg-bg-200 hover:py-5">
-                <a href="/logistica">Recomendaciones</a>
+                <a href="/recomendaciones">Recomendaciones</a>
               </li>
               <li tw="px-2 rounded hover:underline hover:bg-bg-200 hover:py-5">
-                <a href="/lista">Regalos</a>
+                <a href="/regalos">Regalos</a>
               </li>
               <li tw="px-2 rounded hover:underline hover:bg-bg-200 hover:py-5">
                 <a href="/faq">Preguntas Frecuentes</a>
