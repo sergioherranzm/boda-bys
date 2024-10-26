@@ -89,7 +89,7 @@ const Home = () => {
                   </ul>
                 </li>
                 <li>
-                  <p tw="text-xl font-bold inline">Autobús:</p>
+                  <p tw="text-xl font-bold inline">Autobús urbano:</p>
                   <p tw="inline"> aprox. 15 min desde el acueducto</p>
                   <p tw="pl-10">
                     <a

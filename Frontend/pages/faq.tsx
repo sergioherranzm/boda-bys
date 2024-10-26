@@ -220,66 +220,6 @@ const Home = () => {
           <div tw="border border-primary-100 shadow-md py-2 rounded-lg w-full hover:ring-2 ring-secondary-200 bg-bg-200">
             <div
               tw="px-2 pt-1 flex gap-1"
-              onClick={() => setIsOpen4((prev) => !prev)}
-            >
-              <motion.div>
-                {!isOpen4 ? <AddIcon></AddIcon> : <RemoveIcon></RemoveIcon>}
-              </motion.div>
-              <p tw="text-xl font-bold">
-                ¿Se puede lanzar arroz o confeti a los novios?
-              </p>
-            </div>
-
-            {!isOpen4 ? (
-              <div></div>
-            ) : (
-              <motion.div
-                initial={{
-                  height: 0,
-                  opacity: 0,
-                }}
-                animate={{
-                  height: 'auto',
-                  opacity: 1,
-                  transition: {
-                    height: {
-                      duration: 0.4,
-                    },
-                    opacity: {
-                      duration: 0.25,
-                      delay: 0.15,
-                    },
-                  },
-                }}
-                exit={{
-                  height: 0,
-                  opacity: 0,
-                  transition: {
-                    height: {
-                      duration: 0.4,
-                    },
-                    opacity: {
-                      duration: 0.25,
-                    },
-                  },
-                }}
-                className="font-light"
-                tw="ml-10 mt-2"
-              >
-                <p>
-                  La finca sanciona expresamente el uso de arroz o confeti, por
-                  lo que os pedimos que os abstengais de tirarlos.
-                </p>
-                <p>
-                  No os preocupes, se proporcionará munición adecuada para
-                  acribillar a los novios convenientemente.
-                </p>
-              </motion.div>
-            )}
-          </div>
-          <div tw="border border-primary-100 shadow-md py-2 rounded-lg w-full hover:ring-2 ring-secondary-200 bg-bg-200">
-            <div
-              tw="px-2 pt-1 flex gap-1"
               onClick={() => setIsOpen5((prev) => !prev)}
             >
               <motion.div>
@@ -388,6 +328,66 @@ const Home = () => {
                   ¡Las dos cosas! La ceremonia y el cocktail se celebrarán al
                   aire libre, la comida en el interior de los salones, y para la
                   fiesta estaremos en el jardín con carpa.
+                </p>
+              </motion.div>
+            )}
+          </div>
+          <div tw="border border-primary-100 shadow-md py-2 rounded-lg w-full hover:ring-2 ring-secondary-200 bg-bg-200">
+            <div
+              tw="px-2 pt-1 flex gap-1"
+              onClick={() => setIsOpen4((prev) => !prev)}
+            >
+              <motion.div>
+                {!isOpen4 ? <AddIcon></AddIcon> : <RemoveIcon></RemoveIcon>}
+              </motion.div>
+              <p tw="text-xl font-bold">
+                ¿Se puede lanzar arroz o confeti a los novios?
+              </p>
+            </div>
+
+            {!isOpen4 ? (
+              <div></div>
+            ) : (
+              <motion.div
+                initial={{
+                  height: 0,
+                  opacity: 0,
+                }}
+                animate={{
+                  height: 'auto',
+                  opacity: 1,
+                  transition: {
+                    height: {
+                      duration: 0.4,
+                    },
+                    opacity: {
+                      duration: 0.25,
+                      delay: 0.15,
+                    },
+                  },
+                }}
+                exit={{
+                  height: 0,
+                  opacity: 0,
+                  transition: {
+                    height: {
+                      duration: 0.4,
+                    },
+                    opacity: {
+                      duration: 0.25,
+                    },
+                  },
+                }}
+                className="font-light"
+                tw="ml-10 mt-2"
+              >
+                <p>
+                  La finca sanciona expresamente el uso de arroz o confeti, por
+                  lo que os pedimos que os abstengais de tirarlos.
+                </p>
+                <p>
+                  No os preocupes, se proporcionará munición adecuada para
+                  acribillar a los novios convenientemente.
                 </p>
               </motion.div>
             )}

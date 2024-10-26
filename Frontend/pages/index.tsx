@@ -7,7 +7,7 @@ const Home = () => {
       <div tw="flex flex-col items-center text-primary-400 text-center">
         <div
           tw="flex flex-col items-center justify-center"
-          className="lobster-regular"
+          className="solitreo-regular"
           id="fotoPortada"
         >
           <p tw="text-7xl font-bold text-white">BEA</p>
