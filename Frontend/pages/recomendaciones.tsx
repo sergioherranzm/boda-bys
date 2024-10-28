@@ -347,9 +347,9 @@ const Home = () => {
                         >
                           <b>ENLACEBYS</b>
                         </span>{' '}
-                        cuando reservéis a través de la web para que os apliquen
-                        un 15% de descuento (sólo aplicable a la tarifa de
-                        Cancelación Gratuita).
+                        cuando reservéis a través de la web oficial para que os
+                        apliquen un 15% de descuento (sólo aplicable a la tarifa
+                        de Cancelación Gratuita).
                       </p>
                       <p tw="pt-2">
                         El código solo estará disponibles hasta el 27 de Julio.
@@ -443,13 +443,24 @@ const Home = () => {
                       </div>
                     </div>
                     <div tw="pt-2">
-                      <p>Hotel modesto cerca del acueducto.</p>
-                      <ul tw="pt-2" className="bulleted-inside">
-                        El precio aproximado por noche es:
-                        <li tw="">
-                          Habitación Doble (sin desayuno): <b>100 €</b>
-                        </li>
-                      </ul>
+                      <p>Hotel modesto de 3 estrellas cerca del acueducto.</p>
+                      <p tw="pt-2">
+                        El precio aproximado por noche para la habitación doble
+                        es de <b>90 €</b>.
+                      </p>
+                      <p tw="pt-2">
+                        Podeis introducir el código{' '}
+                        <span
+                          tw="hover:text-blue-800"
+                          onClick={() => {
+                            navigator.clipboard.writeText('BODBEASER3008');
+                          }}
+                        >
+                          <b>BODBEASER3008</b>
+                        </span>{' '}
+                        cuando reservéis a través de la web oficial para que os
+                        apliquen un 10% de descuento.
+                      </p>
                     </div>
                   </motion.div>
                 )}
@@ -567,10 +578,10 @@ const Home = () => {
               </li>
               <li>
                 <div tw="flex">
-                  <p tw="pt-1">El Redebal</p>
+                  <p tw="pt-1">Asador Maribel</p>
                   <div tw="px-2  hover:text-blue-800">
                     <a
-                      href="https://maps.app.goo.gl/XzdeZMokMjFiZbzaA"
+                      href="https://maps.app.goo.gl/DuAKD41gRBpLCeHM8"
                       target="_blank"
                       rel="noopener noreferrer"
                     >

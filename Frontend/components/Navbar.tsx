@@ -73,7 +73,7 @@ export const Navbar = () => {
                 <a href="/recomendaciones">Recomendaciones</a>
               </li>
               <li tw="border-b border-gray-400 my-6 uppercase">
-                <a href="/regalos">Regalos</a>
+                <a href="/lista">Lista de Bodas</a>
               </li>
               <li tw="border-b border-gray-400 my-6 uppercase">
                 <a href="/faq">Preguntas Frecuentes</a>
@@ -103,7 +103,7 @@ export const Navbar = () => {
                 <a href="/recomendaciones">Recomendaciones</a>
               </li>
               <li tw="px-2 rounded hover:underline hover:bg-bg-200 hover:py-5">
-                <a href="/regalos">Regalos</a>
+                <a href="/lista">Lista de Bodas</a>
               </li>
               <li tw="px-2 rounded hover:underline hover:bg-bg-200 hover:py-5">
                 <a href="/faq">Preguntas Frecuentes</a>
