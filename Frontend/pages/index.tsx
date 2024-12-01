@@ -15,13 +15,37 @@ const Home = () => {
           <p tw="text-7xl font-bold text-white">SERGIO</p>
         </div>
         <div tw="px-1">
-          <p tw="text-7xl mt-7" className="style-script-regular">
-            ¡Nos casamos!
-          </p>
-          <p tw="text-xl mt-3" className="solitreo-regular">
-            ¡Y queremos compartir un día tan especial con todos vosotros!
-          </p>
-          <div tw="my-2">
+          <div
+            tw="px-1 text-xl flex flex-col justify-center max-w-5xl mx-auto"
+            className="solitreo-regular"
+          >
+            <p tw="mt-6">
+              Hace más de 5 años que el azar nos unió (por suerte) y comenzó
+              nuestra historia. Una historia llena de momentos felices, risas,
+              viajes, confidencias, cenas, charlas, juegos de mesa, pelis... y
+              también alguna que otra lágrima, ¡todo hay que decirlo!
+            </p>
+            <p tw="mt-5">
+              Con una pandemia de por medio que nos separó a la fuerza, en la
+              que nos echamos tremendamente de menos, pero que reforzó nuestra
+              certeza de que estábamos hechos el uno para el otro. Más adelante
+              empezó la convivencia, en la que hemos seguido construyendo los
+              pilares de nuestro amor, y ahora no nos imaginamos la vida sin el
+              uno sin el otro. Así que, después de estos maravillos años, hemos
+              decidido dar un paso más:
+            </p>
+            <p tw="text-6xl mt-3" className="style-script-regular">
+              ¡Nos casamos!
+            </p>
+            <p tw="mt-3">
+              ¡Y queremos compartir un día tan especial con todos vosotros!
+            </p>
+            <p tw="mt-3">
+              Así que ponte tus mejores galas, y preparate para darlo todo en
+              Segovia city. Nos hace mucha ilusión veros a todos allí.
+            </p>
+          </div>
+          <div tw="my-2 flex justify-center">
             <img src="/separator.svg" alt="" />
           </div>
           <div className="barlow-semi-condensed-regular">

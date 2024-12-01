@@ -78,19 +78,17 @@ export const Timer = () => {
             </div>
           </div>*/}
           <div
-            tw="flex justify-center bg-primary-300 text-white py-1 w-screen text-3xl"
+            tw="flex justify-center bg-primary-300 text-white py-1 w-screen text-3xl font-medium"
             className="font-digital"
           >
             <div tw="font-thin leading-normal" className="style-script-regular">
               Quedan&nbsp;
             </div>
-            <div suppressHydrationWarning tw="font-medium">
-              {diff_days_round}
-            </div>
+            <div suppressHydrationWarning>{diff_days_round}</div>
             <div tw="font-thin leading-normal" className="style-script-regular">
               &nbsp;días,&nbsp;
             </div>
-            <div suppressHydrationWarning tw="font-medium">
+            <div suppressHydrationWarning>
               {diff_hour_round_str}:{diff_min_round_str}:{diff_sec_round_str}
             </div>
           </div>

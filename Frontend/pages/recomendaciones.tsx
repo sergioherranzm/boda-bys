@@ -28,21 +28,21 @@ const Home = () => {
                   <motion.div>
                     {!isOpen1 ? <AddIcon></AddIcon> : <RemoveIcon></RemoveIcon>}
                   </motion.div>
-                  <p tw="text-xl font-bold">
-                    Venta Magullo &nbsp;
-                    <img
-                      src="/star.png"
-                      alt=""
-                      style={{ height: '20px' }}
-                      tw="inline"
-                    />{' '}
+                  <p tw="text-xl font-bold">Venta Magullo&nbsp;</p>
+                  <div tw="flex">
                     <img
                       src="/star.png"
                       alt=""
                       style={{ height: '20px' }}
                       tw="inline"
                     />
-                  </p>
+                    <img
+                      src="/star.png"
+                      alt=""
+                      style={{ height: '20px' }}
+                      tw="inline"
+                    />
+                  </div>
                   <div tw="px-2 ml-auto hover:text-blue-800">
                     <a
                       href="https://maps.app.goo.gl/mhdLD6V1Dyo7ehuE6"
@@ -138,33 +138,33 @@ const Home = () => {
                   <motion.div>
                     {!isOpen2 ? <AddIcon></AddIcon> : <RemoveIcon></RemoveIcon>}
                   </motion.div>
-                  <p tw="text-xl font-bold">
-                    Hotel Puerta Segovia &nbsp;
-                    <img
-                      src="/star.png"
-                      alt=""
-                      style={{ height: '20px' }}
-                      tw="inline"
-                    />{' '}
-                    <img
-                      src="/star.png"
-                      alt=""
-                      style={{ height: '20px' }}
-                      tw="inline"
-                    />{' '}
-                    <img
-                      src="/star.png"
-                      alt=""
-                      style={{ height: '20px' }}
-                      tw="inline"
-                    />{' '}
+                  <p tw="text-xl font-bold">Hotel Puerta Segovia&nbsp;</p>
+                  <div tw="flex">
                     <img
                       src="/star.png"
                       alt=""
                       style={{ height: '20px' }}
                       tw="inline"
                     />
-                  </p>
+                    <img
+                      src="/star.png"
+                      alt=""
+                      style={{ height: '20px' }}
+                      tw="inline"
+                    />
+                    <img
+                      src="/star.png"
+                      alt=""
+                      style={{ height: '20px' }}
+                      tw="inline"
+                    />
+                    <img
+                      src="/star.png"
+                      alt=""
+                      style={{ height: '20px' }}
+                      tw="inline"
+                    />
+                  </div>
                   <div tw="px-2 ml-auto hover:text-blue-800">
                     <a
                       href="https://maps.app.goo.gl/VDUxW94uv1ExC99E6"
@@ -249,33 +249,33 @@ const Home = () => {
                   <motion.div>
                     {!isOpen3 ? <AddIcon></AddIcon> : <RemoveIcon></RemoveIcon>}
                   </motion.div>
-                  <p tw="text-xl font-bold">
-                    Eurostars Acueducto &nbsp;
-                    <img
-                      src="/star.png"
-                      alt=""
-                      style={{ height: '20px' }}
-                      tw="inline"
-                    />{' '}
-                    <img
-                      src="/star.png"
-                      alt=""
-                      style={{ height: '20px' }}
-                      tw="inline"
-                    />{' '}
-                    <img
-                      src="/star.png"
-                      alt=""
-                      style={{ height: '20px' }}
-                      tw="inline"
-                    />{' '}
+                  <p tw="text-xl font-bold">Eurostars Acueducto&nbsp;</p>
+                  <div tw="flex">
                     <img
                       src="/star.png"
                       alt=""
                       style={{ height: '20px' }}
                       tw="inline"
                     />
-                  </p>
+                    <img
+                      src="/star.png"
+                      alt=""
+                      style={{ height: '20px' }}
+                      tw="inline"
+                    />
+                    <img
+                      src="/star.png"
+                      alt=""
+                      style={{ height: '20px' }}
+                      tw="inline"
+                    />
+                    <img
+                      src="/star.png"
+                      alt=""
+                      style={{ height: '20px' }}
+                      tw="inline"
+                    />
+                  </div>
                   <div tw="px-2 ml-auto hover:text-blue-800">
                     <a
                       href="https://maps.app.goo.gl/jgwFmTs4ivCPEBQ77"
@@ -366,27 +366,27 @@ const Home = () => {
                   <motion.div>
                     {!isOpen4 ? <AddIcon></AddIcon> : <RemoveIcon></RemoveIcon>}
                   </motion.div>
-                  <p tw="text-xl font-bold">
-                    Hotel ELE Acueducto &nbsp;
-                    <img
-                      src="/star.png"
-                      alt=""
-                      style={{ height: '20px' }}
-                      tw="inline"
-                    />{' '}
-                    <img
-                      src="/star.png"
-                      alt=""
-                      style={{ height: '20px' }}
-                      tw="inline"
-                    />{' '}
+                  <p tw="text-xl font-bold">Hotel ELE Acueducto&nbsp;</p>
+                  <div tw="flex">
                     <img
                       src="/star.png"
                       alt=""
                       style={{ height: '20px' }}
                       tw="inline"
                     />
-                  </p>
+                    <img
+                      src="/star.png"
+                      alt=""
+                      style={{ height: '20px' }}
+                      tw="inline"
+                    />
+                    <img
+                      src="/star.png"
+                      alt=""
+                      style={{ height: '20px' }}
+                      tw="inline"
+                    />
+                  </div>
                   <div tw="px-2 ml-auto hover:text-blue-800">
                     <a
                       href="https://maps.app.goo.gl/oWj2PLp4NkyKdNqi9"
