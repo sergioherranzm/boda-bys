@@ -1,7 +1,12 @@
-import { useState } from 'react';
+import confetti from 'canvas-confetti';
+import { useRef, useState } from 'react';
 
 const Home = () => {
   var [msg, setMsg] = useState('Copiar al portapapeles');
+
+  const dollarAudio = useRef<HTMLAudioElement | undefined>(
+    typeof Audio !== 'undefined' ? new Audio('/cashier.mp3') : undefined
+  );
 
   return (
     <>
@@ -27,6 +32,8 @@ const Home = () => {
               tw="px-2 rounded-xl bg-primary-300 text-white hover:bg-primary-100"
               onClick={() => {
                 navigator.clipboard.writeText('ES7401825322210201020108');
+                dollarAudio.current?.play();
+                confetti();
                 setMsg('¡Copiado al portapapeles!');
               }}
             >
@@ -37,6 +44,8 @@ const Home = () => {
               tw="px-2 rounded-xl bg-green-500 text-white"
               onClick={() => {
                 navigator.clipboard.writeText('ES7401825322210201020108');
+                dollarAudio.current?.play();
+                confetti();
                 setMsg('Que ya se ha copiado al portapapeles');
               }}
             >
