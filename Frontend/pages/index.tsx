@@ -31,8 +31,8 @@ const Home = () => {
               certeza de que estábamos hechos el uno para el otro. Más adelante
               empezó la convivencia, en la que hemos seguido construyendo los
               pilares de nuestro amor, y ahora no nos imaginamos la vida sin el
-              uno sin el otro. Así que, después de estos maravillos años, hemos
-              decidido dar un paso más:
+              uno sin el otro. Así que, después de estos maravillosos años,
+              hemos decidido dar un paso más:
             </p>
             <p tw="text-6xl mt-3" className="style-script-regular">
               ¡Nos casamos!
