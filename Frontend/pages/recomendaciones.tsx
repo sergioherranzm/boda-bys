@@ -672,6 +672,20 @@ const Home = () => {
                     </div>
                   </div>
                 </li>
+                <li>
+                  <div tw="flex">
+                    <p tw="pt-1">La Locura (discoteca)</p>
+                    <div tw="px-2  hover:text-blue-800">
+                      <a
+                        href="https://maps.app.goo.gl/NsP5oDKhdEwGhJe16"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <AssistantDirectionIcon fontSize="medium"></AssistantDirectionIcon>
+                      </a>
+                    </div>
+                  </div>
+                </li>
               </ul>
             </div>
             <p tw=""></p>

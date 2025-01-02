@@ -386,7 +386,7 @@ const Home = () => {
                   lo que os pedimos que os abstengais de tirarlos.
                 </p>
                 <p>
-                  No os preocupes, se proporcionará munición adecuada para
+                  No os preocupéis, se proporcionará munición adecuada para
                   acribillar a los novios convenientemente.
                 </p>
               </motion.div>
