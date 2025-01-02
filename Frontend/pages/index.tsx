@@ -84,12 +84,12 @@ const Home = () => {
             <img src="/separator.svg" alt="" />
           </div>
           <div className="barlow-semi-condensed-regular">
-            <div tw="text-lg font-bold px-2 mb-1 rounded bg-bg-300">
+            <div tw="text-lg font-bold px-2">
               AÑADE EL EVENTO A TU CALENDARIO
             </div>
             <div tw="flex space-x-1">
               <motion.div
-                tw="w-1/2 text-lg font-semibold px-2 rounded cursor-pointer hover:bg-secondary-100 bg-bg-250"
+                tw="w-1/2 text-lg font-semibold px-2 rounded cursor-pointer hover:bg-secondary-100 bg-bg-300"
                 whileHover={{
                   scaleX: 1.04,
                   scaleY: 1.18,
@@ -101,7 +101,7 @@ const Home = () => {
                 </a>
               </motion.div>
               <motion.div
-                tw="w-1/2 text-lg font-semibold px-2 rounded cursor-pointer hover:bg-secondary-100 bg-bg-250"
+                tw="w-1/2 text-lg font-semibold px-2 rounded cursor-pointer hover:bg-secondary-100 bg-bg-300"
                 whileHover={{
                   scaleX: 1.04,
                   scaleY: 1.18,

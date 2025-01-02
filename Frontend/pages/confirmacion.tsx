@@ -9,17 +9,19 @@ const Home = () => {
           tw="px-4 text-primary-400 mx-auto max-w-max"
           className="solitreo-regular"
         >
-          <p tw="font-bold text-center text-xl">CONFIRMACIÓN DE ASISTENCIA</p>
+          <p tw="font-bold text-center my-2 text-xl">
+            CONFIRMACIÓN DE ASISTENCIA
+          </p>
           <div
             className="barlow-semi-condensed-regular"
             tw="px-4 flex flex-col items-center text-primary-400 text-center"
           >
-            <div tw="text-base font-semibold px-2 mb-1 rounded bg-bg-250 min-w-full">
+            <div tw="text-base font-semibold px-2 mb-1 rounded bg-bg-200 min-w-full">
               AÑADE EL EVENTO A TU CALENDARIO
             </div>
             <div tw="flex space-x-1 min-w-full">
               <motion.div
-                tw="w-1/2 text-base font-semibold px-2 rounded cursor-pointer hover:bg-secondary-100 bg-bg-200"
+                tw="w-1/2 text-base font-semibold px-2 rounded cursor-pointer hover:bg-secondary-100 bg-bg-250"
                 whileHover={{
                   scaleX: 1.04,
                   scaleY: 1.18,
@@ -31,7 +33,7 @@ const Home = () => {
                 </a>
               </motion.div>
               <motion.div
-                tw="w-1/2 text-base font-semibold px-2 rounded cursor-pointer hover:bg-secondary-100 bg-bg-200"
+                tw="w-1/2 text-base font-semibold px-2 rounded cursor-pointer hover:bg-secondary-100 bg-bg-250"
                 whileHover={{
                   scaleX: 1.04,
                   scaleY: 1.18,
