@@ -11,22 +11,41 @@ const Home = () => {
         >
           <p tw="font-bold text-center text-xl">CONFIRMACIÓN DE ASISTENCIA</p>
           <div
+            className="barlow-semi-condensed-regular"
+            tw="px-4 flex flex-col items-center text-primary-400 text-center"
+          >
+            <div tw="text-base font-semibold px-2 mb-1 rounded bg-bg-250 min-w-full">
+              AÑADE EL EVENTO A TU CALENDARIO
+            </div>
+            <div tw="flex space-x-1 min-w-full">
+              <motion.div
+                tw="w-1/2 text-base font-semibold px-2 rounded cursor-pointer hover:bg-secondary-100 bg-bg-200"
+                whileHover={{
+                  scaleX: 1.04,
+                  scaleY: 1.18,
+                  transition: { duration: 0.3 },
+                }}
+              >
+                <a href="http://www.google.com/calendar/render?action=TEMPLATE&text=Boda+Bea+y+Sergio&dates=20250830T084500Z/20250830T210000Z&location=Finca%20el%20Molino%20de%20la%20Venta%2C%20La%20Lastrilla%2C%20Segovia&details=Visita%20nuestra%20web%3A%0A%3Ca%20href%3D%22https%3A%2F%2Fbodasergioybea.zegio.top%2F%22%3Ehttps%3A%2F%2Fbodasergioybea.zegio.top%2F%3C%2Fa%3E">
+                  GOOGLE
+                </a>
+              </motion.div>
+              <motion.div
+                tw="w-1/2 text-base font-semibold px-2 rounded cursor-pointer hover:bg-secondary-100 bg-bg-200"
+                whileHover={{
+                  scaleX: 1.04,
+                  scaleY: 1.18,
+                  transition: { duration: 0.3 },
+                }}
+              >
+                <a href="/20250830-boda-bea-y-sergio.ics">iPHONE</a>
+              </motion.div>
+            </div>
+          </div>
+          <div
             tw="px-4 flex flex-col items-center text-primary-400 text-center"
             className="barlow-semi-condensed-regular"
-          >
-            <motion.div
-              tw="text-base font-bold px-2 rounded mb-2 cursor-pointer hover:bg-secondary-100 bg-bg-400"
-              whileHover={{
-                scaleX: 1.04,
-                scaleY: 1.18,
-                transition: { duration: 0.3 },
-              }}
-            >
-              <a href="http://www.google.com/calendar/render?action=TEMPLATE&text=Boda+Bea+y+Sergio&dates=20250830T084500Z/20250830T210000Z&location=Finca%20el%20Molino%20de%20la%20Venta%2C%20La%20Lastrilla%2C%20Segovia&details=Visita%20nuestra%20web%3A%0A%3Ca%20href%3D%22https%3A%2F%2Fbodasergioybea.zegio.top%2F%22%3Ehttps%3A%2F%2Fbodasergioybea.zegio.top%2F%3C%2Fa%3E">
-                AÑADE EL EVENTO A TU CALENDARIO
-              </a>
-            </motion.div>
-          </div>
+          ></div>
           <p tw="mt-2 text-center">
             Podrás rellenar el formulario una sola vez para ti y tus
             acompañantes (o familia).

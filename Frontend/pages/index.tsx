@@ -59,31 +59,17 @@ const Home = () => {
             >
               <a href="/confirmacion">CONFIRMA AQUÍ TU ASISTENCIA</a>
             </motion.div>
-            <motion.div
-              tw="text-xl font-bold px-2 rounded mb-4 cursor-pointer hover:bg-secondary-100 bg-bg-400"
-              whileHover={{
-                scaleX: 1.04,
-                scaleY: 1.18,
-                transition: { duration: 0.3 },
-              }}
-            >
-              <a href="http://www.google.com/calendar/render?action=TEMPLATE&text=Boda+Bea+y+Sergio&dates=20250830T084500Z/20250830T210000Z&location=Finca%20el%20Molino%20de%20la%20Venta%2C%20La%20Lastrilla%2C%20Segovia&details=Visita%20nuestra%20web%3A%0A%3Ca%20href%3D%22https%3A%2F%2Fbodasergioybea.zegio.top%2F%22%3Ehttps%3A%2F%2Fbodasergioybea.zegio.top%2F%3C%2Fa%3E">
-                AÑADE A TU CALENDARIO (ANDROID)
-              </a>
-            </motion.div>
-            <motion.div
-              tw="text-xl font-bold px-2 rounded mb-4 cursor-pointer hover:bg-secondary-100 bg-bg-400"
-              whileHover={{
-                scaleX: 1.04,
-                scaleY: 1.18,
-                transition: { duration: 0.3 },
-              }}
-            >
-              <a href="/20250830-boda-bea-y-sergio.ics">
-                AÑADE A TU CALENDARIO (IOS)
-              </a>
-            </motion.div>
             {/*<motion.div
+              tw="text-xl font-bold px-2 rounded mb-4 cursor-pointer hover:bg-secondary-100 bg-bg-400"
+              whileHover={{
+                scaleX: 1.08,
+                scaleY: 1.08,
+                transition: { duration: 0.3 },
+              }}
+            >
+              <a href="/fotos">SUBE AQUÍ TUS FOTOS</a>
+            </motion.div>
+            <motion.div
               tw="text-xl font-bold px-2 rounded mb-4 cursor-pointer hover:bg-secondary-100 bg-bg-400"
               whileHover={{
                 scaleX: 1.04,
@@ -93,16 +79,38 @@ const Home = () => {
             >
               <a href="/preboda">LA PRE-BODA</a>
             </motion.div>*/}
-            {/*<motion.div
-            tw="text-xl font-bold px-2 rounded mb-4 cursor-pointer hover:bg-secondary-100 bg-bg-400"
-            whileHover={{
-              scaleX: 1.08,
-              scaleY: 1.08,
-              transition: { duration: 0.3 },
-            }}
-          >
-            <a href="/fotos">SUBE AQUÍ TUS FOTOS</a>
-          </motion.div>*/}
+          </div>
+          <div tw="my-2 flex justify-center">
+            <img src="/separator.svg" alt="" />
+          </div>
+          <div className="barlow-semi-condensed-regular">
+            <div tw="text-lg font-bold px-2 mb-1 rounded bg-bg-300">
+              AÑADE EL EVENTO A TU CALENDARIO
+            </div>
+            <div tw="flex space-x-1">
+              <motion.div
+                tw="w-1/2 text-lg font-semibold px-2 rounded cursor-pointer hover:bg-secondary-100 bg-bg-250"
+                whileHover={{
+                  scaleX: 1.04,
+                  scaleY: 1.18,
+                  transition: { duration: 0.3 },
+                }}
+              >
+                <a href="http://www.google.com/calendar/render?action=TEMPLATE&text=Boda+Bea+y+Sergio&dates=20250830T084500Z/20250830T210000Z&location=Finca%20el%20Molino%20de%20la%20Venta%2C%20La%20Lastrilla%2C%20Segovia&details=Visita%20nuestra%20web%3A%0A%3Ca%20href%3D%22https%3A%2F%2Fbodasergioybea.zegio.top%2F%22%3Ehttps%3A%2F%2Fbodasergioybea.zegio.top%2F%3C%2Fa%3E">
+                  GOOGLE
+                </a>
+              </motion.div>
+              <motion.div
+                tw="w-1/2 text-lg font-semibold px-2 rounded cursor-pointer hover:bg-secondary-100 bg-bg-250"
+                whileHover={{
+                  scaleX: 1.04,
+                  scaleY: 1.18,
+                  transition: { duration: 0.3 },
+                }}
+              >
+                <a href="/20250830-boda-bea-y-sergio.ics">iPHONE</a>
+              </motion.div>
+            </div>
           </div>
         </div>
       </div>

@@ -15,6 +15,7 @@ module.exports = {
         'secondary-500': '#0004b7',
         'bg-100': '#fcf4eb',
         'bg-200': '#f9ead8',
+        'bg-250': '#f6e4cf',
         'bg-300': '#f6dfc5',
         'bg-400': '#f3d5b1',
         'bg-500': '#f1ca9e',
