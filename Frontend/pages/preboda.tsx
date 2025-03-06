@@ -14,8 +14,9 @@ const Home = () => {
               Para todos aquellos que quieran ir canlentando antes de la boda,
               nos juntaremos el
             </p>
-            <p tw="text-2xl font-bold">29 de agosto de 2025 sobre las 20:00</p>
-            <p tw="">Lugar:</p>
+            <p tw="text-2xl font-bold">viernes 29 de agosto de 2025</p>
+            <p tw="">Hora:</p>
+            <p tw="text-2xl font-bold">TBD</p> <p tw="">Lugar:</p>
             <p tw="text-2xl font-bold">TBD</p>{' '}
             {/*<div tw="my-2 border border-primary-100">
               <iframe

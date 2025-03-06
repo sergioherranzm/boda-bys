@@ -430,7 +430,7 @@ const Home = () => {
                 className="font-light"
                 tw="ml-10 mt-2"
               >
-                <p>¡Por supuesto! Nuestra boda es "kids-friendy".</p>
+                <p>¡Por supuesto! Nuestra boda es &quot;kids-friendy&quot;.</p>
               </motion.div>
             )}
           </div>

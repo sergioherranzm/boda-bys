@@ -70,6 +70,9 @@ export const Navbar = () => {
                 <a href="/boda">La Boda</a>
               </li>
               <li tw="border-b border-gray-400 my-6 uppercase">
+                <a href="/preboda">La Previa</a>
+              </li>
+              <li tw="border-b border-gray-400 my-6 uppercase">
                 <a href="/recomendaciones">Recomendaciones</a>
               </li>
               <li tw="border-b border-gray-400 my-6 uppercase">
@@ -98,6 +101,9 @@ export const Navbar = () => {
               </li>*/}
               <li tw="px-2 rounded hover:underline hover:bg-bg-200 hover:py-5">
                 <a href="/boda">La Boda</a>
+              </li>
+              <li tw="px-2 rounded hover:underline hover:bg-bg-200 hover:py-5">
+                <a href="/preboda">La Previa</a>
               </li>
               <li tw="px-2 rounded hover:underline hover:bg-bg-200 hover:py-5">
                 <a href="/recomendaciones">Recomendaciones</a>
