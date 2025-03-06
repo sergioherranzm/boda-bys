@@ -14,10 +14,10 @@ const Home = () => {
               Para todos aquellos que quieran ir canlentando antes de la boda,
               nos juntaremos el
             </p>
-            <p tw="text-2xl font-bold">29 de agosto de 2025 a las 20:00</p>
-            <p tw="">en el bar</p>
+            <p tw="text-2xl font-bold">29 de agosto de 2025 sobre las 20:00</p>
+            <p tw="">Lugar:</p>
             <p tw="text-2xl font-bold">TBD</p>{' '}
-            <div tw="my-2 border border-primary-100">
+            {/*<div tw="my-2 border border-primary-100">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d633.3836205227298!2d-4.100674163709812!3d40.96183010361241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd413fe7516d2399%3A0x86a435ba7b95cefd!2sFinca%20el%20Molino%20de%20la%20Venta!5e0!3m2!1sen!2ses!4v1724507098972!5m2!1sen!2ses"
                 width="100%"
@@ -33,7 +33,7 @@ const Home = () => {
               tw="cursor-pointer px-4 pt-1 rounded-xl bg-primary-300 text-white hover:bg-primary-100"
             >
               Ver en Google Maps
-            </a>
+            </a>*/}
           </div>
           <div tw="my-5">
             <img src="/separator.svg" alt="" />
