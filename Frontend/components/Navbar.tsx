@@ -55,9 +55,12 @@ export const Navbar = () => {
                 <line x1="6" y1="6" x2="18" y2="18" />
               </svg>
             </div>
-            <Logo type="nobg" width="200" />
+            {/*NAVBAR HAMBURGER*/}
+            <div tw="mt-10">
+              <Logo type="nobg" width="200" />
+            </div>
             <ul tw="flex flex-col items-center justify-between min-h-[250px] font-bold text-logo-000">
-              <li tw="border-b border-gray-400 mt-4 mb-6 uppercase">
+              <li tw="border-b border-gray-400 mt-10 mb-6 uppercase">
                 <a href="/">Inicio</a>
               </li>
               <li tw="border-b border-gray-400 my-6 uppercase">
@@ -144,7 +147,7 @@ export const Navbar = () => {
         z-index: 100;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: start;
         align-items: center;
       }
     `}</style>
