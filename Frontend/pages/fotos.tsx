@@ -16,6 +16,7 @@ const Home = () => {
             <a
               href="https://photos.app.goo.gl/vmmiqM5RiUiptH8y9"
               target="_blank"
+              rel="noreferrer"
             >
               ALBUM
             </a>
