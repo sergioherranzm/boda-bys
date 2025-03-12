@@ -123,7 +123,7 @@ const Home = () => {
                         que os apliquen el precio especial.
                       </p>
                       <p tw="pt-2">
-                        Las habitaciones con precios especiales solo estarán
+                        Las habitaciones con precios especiales sólo estarán
                         disponibles <u>hasta el 29 de Junio</u>.
                       </p>
                     </div>
@@ -215,7 +215,7 @@ const Home = () => {
                   >
                     <div tw="flex justify-between">
                       <div>
-                        <SignpostIcon></SignpostIcon> 0,4 km /{' '}
+                        <SignpostIcon></SignpostIcon> 400 m /{' '}
                         <DirectionsWalkIcon></DirectionsWalkIcon> 5 min /{' '}
                         <DirectionsCarIcon></DirectionsCarIcon> 1 min{' '}
                       </div>
@@ -352,7 +352,7 @@ const Home = () => {
                         de Cancelación Gratuita).
                       </p>
                       <p tw="pt-2">
-                        El código solo estará disponibles hasta el 27 de Julio.
+                        El código solo estará disponible hasta el 27 de Julio.
                       </p>
                     </div>
                   </motion.div>

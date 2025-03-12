@@ -8,12 +8,19 @@ const Home = () => {
           tw="px-4 text-primary-400 mx-auto max-w-max"
           className="solitreo-regular"
         >
-          <p tw="font-bold text-center">FOTOS</p>
+          <p tw="text-4xl font-bold text-center">Fotos</p>
           <p tw="mt-2 text-center">
-            Comparte en Google Fotos tus fotos de la boda.
+            Comparte en este álbum de Google Fotos tus fotos de la boda.
           </p>
+          <div tw="text-4xl font-bold text-center underline cursor-pointer hover:text-secondary-400 my-16">
+            <a
+              href="https://photos.app.goo.gl/vmmiqM5RiUiptH8y9"
+              target="_blank"
+            >
+              ALBUM
+            </a>
+          </div>
         </div>
-        <div tw="">https://photos.app.goo.gl/vmmiqM5RiUiptH8y9</div>
       </div>
     </>
   );

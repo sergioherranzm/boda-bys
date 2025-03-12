@@ -24,6 +24,7 @@ const Home = () => {
             <p tw="text-2xl font-bold">El Molino de la Venta</p>
             <p tw="">y la posterior celebración</p>
             <p tw="">en el mismo lugar.</p>
+            <p tw="mt-4">Se ruega puntualidad.</p>
           </div>
           <div tw="my-5">
             <img src="/separator.svg" alt="" />

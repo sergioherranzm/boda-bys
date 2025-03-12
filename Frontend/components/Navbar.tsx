@@ -60,28 +60,28 @@ export const Navbar = () => {
               <Logo type="nobg" width="200" />
             </div>
             <ul tw="flex flex-col items-center justify-between min-h-[250px] font-bold text-logo-000">
-              <li tw="border-b border-gray-400 mt-10 mb-6 uppercase">
+              <li tw="border-b border-gray-400 mt-10 mb-4 uppercase">
                 <a href="/">Inicio</a>
               </li>
-              <li tw="border-b border-gray-400 my-6 uppercase">
+              <li tw="border-b border-gray-400 my-4 uppercase">
                 <a href="/confirmacion">Confirmar Asistencia</a>
               </li>
-              {/*<li tw="border-b border-gray-400 my-6 uppercase">
-                <a href="/fotos">Fotos</a>
+              {/*<li tw="border-b border-gray-400 my-4 uppercase">
+                <a href="/fotos">Fotos de la boda</a>
               </li>*/}
-              <li tw="border-b border-gray-400 my-6 uppercase">
+              <li tw="border-b border-gray-400 my-4 uppercase">
                 <a href="/boda">La Boda</a>
               </li>
-              <li tw="border-b border-gray-400 my-6 uppercase">
+              <li tw="border-b border-gray-400 my-4 uppercase">
                 <a href="/preboda">La Previa</a>
               </li>
-              <li tw="border-b border-gray-400 my-6 uppercase">
+              <li tw="border-b border-gray-400 my-4 uppercase">
                 <a href="/recomendaciones">Recomendaciones</a>
               </li>
-              <li tw="border-b border-gray-400 my-6 uppercase">
+              <li tw="border-b border-gray-400 my-4 uppercase">
                 <a href="/lista">Lista de Bodas</a>
               </li>
-              <li tw="border-b border-gray-400 my-6 uppercase">
+              <li tw="border-b border-gray-400 my-4 uppercase">
                 <a href="/faq">Preguntas Frecuentes</a>
               </li>
             </ul>

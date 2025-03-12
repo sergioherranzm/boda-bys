@@ -254,7 +254,10 @@ const Home = () => {
               >
                 <p>
                   En la sección de{' '}
-                  <a tw="underline cursor-pointer" href="/boda#transporte">
+                  <a
+                    tw="underline cursor-pointer font-semibold"
+                    href="/boda#transporte"
+                  >
                     La Boda
                   </a>{' '}
                   puedes encontrar las distintas opciones de transporte y
@@ -483,9 +486,9 @@ const Home = () => {
                 tw="ml-10 mt-2"
               >
                 <p>
-                  Es una boda de mañana. La boda comenzará a las 13h y se espera
-                  que termine NO más tarde de las 23h (variará según el tiempo
-                  de la celebración y la comida).
+                  Es una boda de mañana. La boda comenzará a las 13h (se ruega
+                  puntualidad) y se espera que termine NO más tarde de las 23h
+                  (variará según el tiempo de la celebración y la comida).
                 </p>
               </motion.div>
             )}
