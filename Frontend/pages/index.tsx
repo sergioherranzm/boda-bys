@@ -73,7 +73,7 @@ const Home = () => {
               <a href="/fotos">SUBE AQUÍ TUS FOTOS</a>
             </motion.div>*/}
 
-            {/*<motion.div
+            <motion.div
               tw="text-xl font-bold px-2 rounded mb-4 cursor-pointer hover:bg-secondary-100 bg-bg-400"
               whileHover={{
                 scaleX: 1.04,
@@ -82,7 +82,7 @@ const Home = () => {
               }}
             >
               <a href="/preboda">LA PRE-BODA</a>
-            </motion.div>*/}
+            </motion.div>
           </div>
           <div tw="my-2 flex justify-center">
             <img src="/separator.svg" alt="" />

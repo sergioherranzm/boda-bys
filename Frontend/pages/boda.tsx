@@ -109,7 +109,59 @@ const Home = () => {
                     rel="noopener noreferrer"
                     tw="pl-10 underline cursor-pointer hover:text-secondary-400"
                   >
-                    Ver ruta
+                    Ver ruta en maps
+                  </a>
+                </li>
+                <li>
+                  <p tw="text-xl font-bold inline">A pie:</p>
+                  <p tw="inline"> aprox. 30 min desde el acueducto</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            tw="flex flex-col items-center gap-5 text-primary-400 mb-5 mt-8"
+            id="transporte"
+          >
+            <p tw="text-4xl font-bold text-center">Cómo volver</p>
+            <div tw="">
+              <ul tw="pl-4" className="bulleted">
+                <li>
+                  <p tw="text-xl font-bold inline">Autobus de la boda:</p>
+                  <p tw="pl-10">Un bus saldrá de la finca hasta el </p>
+                  <p tw="pl-10">
+                    acueducto a las <b>22:45</b> y otro a las <b>23:15</b>
+                  </p>
+                </li>
+                <li>
+                  <p tw="text-xl font-bold inline">Taxi:</p>
+
+                  <p tw="inline">
+                    {' '}
+                    ¡OJO! Suele haber saturación de taxis por las noches
+                  </p>
+                </li>
+                <li>
+                  <p tw="text-xl font-bold inline">Autobús urbano:</p>
+                  <p tw="inline"> aprox. 15 min hasta el acueducto</p>
+                  <p tw="pl-10">
+                    <a
+                      href="https://infosegovia.com/linea-4-carretera-de-soria-hospital-general/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      tw="cursor-pointer  text-blue-800 hover:text-secondary-400"
+                    >
+                      Línea 4
+                    </a>{' '}
+                    - Desde <i>Carretera de Soria 1</i>
+                  </p>
+                  <a
+                    href="https://maps.app.goo.gl/mJetBpzSM3G3SjYq9"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    tw="pl-10 underline cursor-pointer hover:text-secondary-400"
+                  >
+                    Ver ruta en maps
                   </a>
                 </li>
                 <li>
@@ -130,7 +182,7 @@ const Home = () => {
                 </li>
                 <li>
                   <p tw="text-xl font-bold inline">A pie:</p>
-                  <p tw="inline"> aprox. 30 min desde el acueducto</p>
+                  <p tw="inline"> aprox. 30 min hasta el acueducto</p>
                 </li>
               </ul>
             </div>

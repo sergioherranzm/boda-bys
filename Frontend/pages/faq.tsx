@@ -75,8 +75,7 @@ const Home = () => {
                 <p>
                   Nos gustaría mucho juntarnos todos y vernos el viernes 29 por
                   la tarde para ir calentando motores antes del fiestón jeje.
-                  Pero todavía no podemos asegurarlo al 100% ni sabemos el
-                  lugar.
+                  Pero todavía no podemos asegurarlo al 100%.
                 </p>
                 <p>
                   Actualizaremos la sección de &#127881;{' '}
@@ -94,117 +93,6 @@ const Home = () => {
               </motion.div>
             )}
           </div>
-          {/*SEPARACION DE ITEM*/}
-          {/*<div tw="border border-primary-100 shadow-md py-2 rounded-lg w-full hover:ring-2 ring-secondary-200 bg-bg-200">
-            <div
-              tw="px-2 pt-1 flex gap-1"
-              onClick={() => setIsOpen2((prev) => !prev)}
-            >
-              <motion.div>
-                {!isOpen2 ? <AddIcon></AddIcon> : <RemoveIcon></RemoveIcon>}
-              </motion.div>
-              <p tw="text-xl font-bold">¿Habrá servicio de autobuses?</p>
-            </div>
-
-            {!isOpen2 ? (
-              <div></div>
-            ) : (
-              <motion.div
-                initial={{
-                  height: 0,
-                  opacity: 0,
-                }}
-                animate={{
-                  height: 'auto',
-                  opacity: 1,
-                  transition: {
-                    height: {
-                      duration: 0.4,
-                    },
-                    opacity: {
-                      duration: 0.25,
-                      delay: 0.15,
-                    },
-                  },
-                }}
-                exit={{
-                  height: 0,
-                  opacity: 0,
-                  transition: {
-                    height: {
-                      duration: 0.4,
-                    },
-                    opacity: {
-                      duration: 0.25,
-                    },
-                  },
-                }}
-                className="font-light"
-                tw="ml-10 mt-2"
-              >
-                <p>
-                  No está definido todavía. Actualizaremos esta sección cuando
-                  tengamos más noticias.
-                </p>
-              </motion.div>
-            )}
-              </div>*/}
-          {/*<div tw="border border-primary-100 shadow-md py-2 rounded-lg w-full hover:ring-2 ring-secondary-200 bg-bg-200">
-            <div
-              tw="px-2 pt-1 flex gap-1"
-              onClick={() => setIsOpen3((prev) => !prev)}
-            >
-              <motion.div>
-                {!isOpen3 ? <AddIcon></AddIcon> : <RemoveIcon></RemoveIcon>}
-              </motion.div>
-              <p tw="text-xl font-bold">
-                ¿Habrá alpargatas para cambiarse los tacones?
-              </p>
-            </div>
-
-            {!isOpen3 ? (
-              <div></div>
-            ) : (
-              <motion.div
-                initial={{
-                  height: 0,
-                  opacity: 0,
-                }}
-                animate={{
-                  height: 'auto',
-                  opacity: 1,
-                  transition: {
-                    height: {
-                      duration: 0.4,
-                    },
-                    opacity: {
-                      duration: 0.25,
-                      delay: 0.15,
-                    },
-                  },
-                }}
-                exit={{
-                  height: 0,
-                  opacity: 0,
-                  transition: {
-                    height: {
-                      duration: 0.4,
-                    },
-                    opacity: {
-                      duration: 0.25,
-                    },
-                  },
-                }}
-                className="font-light"
-                tw="ml-10 mt-2"
-              >
-                <p>
-                  No está definido todavía. Actualizaremos esta sección cuando
-                  tengamos más noticias.
-                </p>
-              </motion.div>
-            )}
-              </div>*/}
           {/*SEPARACION DE ITEM*/}
           <div tw="border border-primary-100 shadow-md py-2 rounded-lg w-full hover:ring-2 ring-secondary-200 bg-bg-200">
             <div
@@ -262,6 +150,63 @@ const Home = () => {
                   </a>{' '}
                   puedes encontrar las distintas opciones de transporte y
                   aparcamiento.
+                </p>
+              </motion.div>
+            )}
+          </div>
+          {/*SEPARACION DE ITEM*/}
+          <div tw="border border-primary-100 shadow-md py-2 rounded-lg w-full hover:ring-2 ring-secondary-200 bg-bg-200">
+            <div
+              tw="px-2 pt-1 flex gap-1"
+              onClick={() => setIsOpen2((prev) => !prev)}
+            >
+              <motion.div>
+                {!isOpen2 ? <AddIcon></AddIcon> : <RemoveIcon></RemoveIcon>}
+              </motion.div>
+              <p tw="text-xl font-bold">¿Habrá servicio de autobuses?</p>
+            </div>
+
+            {!isOpen2 ? (
+              <div></div>
+            ) : (
+              <motion.div
+                initial={{
+                  height: 0,
+                  opacity: 0,
+                }}
+                animate={{
+                  height: 'auto',
+                  opacity: 1,
+                  transition: {
+                    height: {
+                      duration: 0.4,
+                    },
+                    opacity: {
+                      duration: 0.25,
+                      delay: 0.15,
+                    },
+                  },
+                }}
+                exit={{
+                  height: 0,
+                  opacity: 0,
+                  transition: {
+                    height: {
+                      duration: 0.4,
+                    },
+                    opacity: {
+                      duration: 0.25,
+                    },
+                  },
+                }}
+                className="font-light"
+                tw="ml-10 mt-2"
+              >
+                <p>
+                  Habrá un autobus para los invitados esperando en la puerta de
+                  finca cuando finalice la fiesta. Realizará dos viajes hasta el
+                  acueducto. El primero a las <b>22:45</b> y otro a las{' '}
+                  <b>23:15</b>.
                 </p>
               </motion.div>
             )}
@@ -577,6 +522,63 @@ const Home = () => {
               </motion.div>
             )}
           </div>
+          {/*SEPARACION DE ITEM*/}
+          {/*<div tw="border border-primary-100 shadow-md py-2 rounded-lg w-full hover:ring-2 ring-secondary-200 bg-bg-200">
+            <div
+              tw="px-2 pt-1 flex gap-1"
+              onClick={() => setIsOpen3((prev) => !prev)}
+            >
+              <motion.div>
+                {!isOpen3 ? <AddIcon></AddIcon> : <RemoveIcon></RemoveIcon>}
+              </motion.div>
+              <p tw="text-xl font-bold">
+                ¿Habrá alpargatas para cambiarse los tacones?
+              </p>
+            </div>
+
+            {!isOpen3 ? (
+              <div></div>
+            ) : (
+              <motion.div
+                initial={{
+                  height: 0,
+                  opacity: 0,
+                }}
+                animate={{
+                  height: 'auto',
+                  opacity: 1,
+                  transition: {
+                    height: {
+                      duration: 0.4,
+                    },
+                    opacity: {
+                      duration: 0.25,
+                      delay: 0.15,
+                    },
+                  },
+                }}
+                exit={{
+                  height: 0,
+                  opacity: 0,
+                  transition: {
+                    height: {
+                      duration: 0.4,
+                    },
+                    opacity: {
+                      duration: 0.25,
+                    },
+                  },
+                }}
+                className="font-light"
+                tw="ml-10 mt-2"
+              >
+                <p>
+                  No está definido todavía. Actualizaremos esta sección cuando
+                  tengamos más noticias.
+                </p>
+              </motion.div>
+            )}
+              </div>*/}
           {/*SEPARACION DE ITEM*/}
         </div>
         <div tw="" id="fotoFAQ"></div>

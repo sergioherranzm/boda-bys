@@ -16,11 +16,14 @@ const Home = () => {
             </p>
             <p tw="text-2xl font-bold">viernes 29 de agosto de 2025</p>
             <p tw="">Hora:</p>
-            <p tw="text-2xl font-bold">TBD</p> <p tw="">Lugar:</p>
-            <p tw="text-2xl font-bold">TBD</p>{' '}
-            {/*<div tw="my-2 border border-primary-100">
+            <p tw="text-2xl font-bold"> TBD (por la tarde)</p>{' '}
+            <p tw="">Lugar:</p>
+            <p tw="text-2xl font-bold">
+              Pinillos de Polendos (al 97,5% seguro)
+            </p>{' '}
+            <div tw="my-2 border border-primary-100">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d633.3836205227298!2d-4.100674163709812!3d40.96183010361241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd413fe7516d2399%3A0x86a435ba7b95cefd!2sFinca%20el%20Molino%20de%20la%20Venta!5e0!3m2!1sen!2ses!4v1724507098972!5m2!1sen!2ses"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12030.101918763376!2d-4.125804!3d41.079364!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4137197e00e377%3A0x4d126eb39a3d1120!2s40397%20Pinillos%20de%20Polendos%2C%20Segovia!5e0!3m2!1sen!2ses!4v1749055955478!5m2!1sen!2ses"
                 width="100%"
                 height="400"
                 loading="lazy"
@@ -28,13 +31,13 @@ const Home = () => {
               ></iframe>
             </div>
             <a
-              href="https://maps.app.goo.gl/Cxipa5xk8sJJZnDC8"
+              href="https://maps.app.goo.gl/3dmxA7VYeFqfDBos7"
               target="_blank"
               rel="noopener noreferrer"
               tw="cursor-pointer px-4 pt-1 rounded-xl bg-primary-300 text-white hover:bg-primary-100"
             >
               Ver en Google Maps
-            </a>*/}
+            </a>
           </div>
           <div tw="my-5">
             <img src="/separator.svg" alt="" />

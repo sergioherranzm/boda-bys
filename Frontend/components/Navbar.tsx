@@ -63,11 +63,12 @@ export const Navbar = () => {
               <li tw="border-b border-gray-400 mt-10 mb-4 uppercase">
                 <a href="/">Inicio</a>
               </li>
+              {/* */}
               <li tw="border-b border-gray-400 my-4 uppercase">
                 <a href="/confirmacion">Confirmar Asistencia</a>
               </li>
               {/*<li tw="border-b border-gray-400 my-4 uppercase">
-                <a href="/fotos">Fotos de la boda</a>
+                <a href="/fotos">Album de fotos</a>
               </li>*/}
               <li tw="border-b border-gray-400 my-4 uppercase">
                 <a href="/boda">La Boda</a>
@@ -96,11 +97,12 @@ export const Navbar = () => {
               <li tw="px-2 rounded hover:underline hover:bg-bg-200 hover:py-5">
                 <a href="/">Inicio</a>
               </li>
+              {/* */}
               <li tw="px-2 rounded hover:underline hover:bg-bg-200 hover:py-5">
                 <a href="/confirmacion">Confirmar Asistencia</a>
               </li>
               {/*<li tw="px-2 rounded hover:underline hover:bg-bg-200 hover:py-5">
-                <a href="/fotos">Fotos</a>
+                <a href="/fotos">Album de fotos</a>
               </li>*/}
               <li tw="px-2 rounded hover:underline hover:bg-bg-200 hover:py-5">
                 <a href="/boda">La Boda</a>
