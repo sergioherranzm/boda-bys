@@ -119,13 +119,15 @@ const Home = () => {
                       </ul>
                       <p tw="pt-2">
                         Cuando reserveis,{' '}
-                        <u>acordaos de informar que vais a nuestra boda</u> para
-                        que os apliquen el precio especial.
+                        <b>
+                          <u>acordaos de informar que vais a nuestra boda</u>
+                        </b>{' '}
+                        para que os apliquen el precio especial.
                       </p>
-                      <p tw="pt-2">
+                      {/*<p tw="pt-2">
                         Las habitaciones con precios especiales sólo estarán
                         disponibles <u>hasta el 29 de Junio</u>.
-                      </p>
+                      </p>*/}
                     </div>
                   </motion.div>
                 )}

@@ -19,7 +19,7 @@ const Home = () => {
           <div tw="flex flex-col items-center text-primary-400 text-xl text-center">
             <p tw="text-4xl font-bold text-center">La Boda</p>
             <p tw="">La ceremonia civil será el</p>
-            <p tw="text-2xl font-bold">30 de agosto de 2025 a las 13:00</p>
+            <p tw="text-2xl font-bold">30 de agosto de 2025 a las 13:00 h</p>
             <p tw="">en la finca</p>
             <p tw="text-2xl font-bold">El Molino de la Venta</p>
             <p tw="">y la posterior celebración</p>

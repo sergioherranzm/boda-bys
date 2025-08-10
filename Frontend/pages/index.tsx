@@ -52,7 +52,7 @@ const Home = () => {
             <img src="/separator.svg" alt="" />
           </div>
           <div className="barlow-semi-condensed-regular">
-            <motion.div
+            {/*<motion.div
               tw="text-xl font-bold px-2 rounded mb-4 cursor-pointer hover:bg-secondary-100 bg-bg-400"
               whileHover={{
                 scaleX: 1.04,
@@ -61,17 +61,17 @@ const Home = () => {
               }}
             >
               <a href="/confirmacion">CONFIRMA AQUÍ TU ASISTENCIA</a>
-            </motion.div>
-            {/*<motion.div
+            </motion.div>*/}
+            <motion.div
               tw="text-xl font-bold px-2 rounded mb-4 cursor-pointer hover:bg-secondary-100 bg-bg-400"
               whileHover={{
-                scaleX: 1.08,
-                scaleY: 1.08,
+                scaleX: 1.04,
+                scaleY: 1.18,
                 transition: { duration: 0.3 },
               }}
             >
-              <a href="/fotos">SUBE AQUÍ TUS FOTOS</a>
-            </motion.div>*/}
+              <a href="/fotos">SUBE TUS FOTOS A NUESTRO ÁLBUM</a>
+            </motion.div>
 
             <motion.div
               tw="text-xl font-bold px-2 rounded mb-4 cursor-pointer hover:bg-secondary-100 bg-bg-400"

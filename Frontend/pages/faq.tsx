@@ -73,19 +73,18 @@ const Home = () => {
               >
                 <p tw="">¡¡SÍ!!</p>
                 <p>
-                  Nos gustaría mucho juntarnos todos y vernos el viernes 29 por
-                  la tarde para ir calentando motores antes del fiestón jeje.
-                  Pero todavía no podemos asegurarlo al 100%.
+                  Nos juntaremos el viernes 29 por la tarde para ir calentando
+                  motores antes del fiestón jeje.
                 </p>
                 <p>
-                  Actualizaremos la sección de &#127881;{' '}
+                  Tienes toda la información en la sección de &#127881;{' '}
                   <a
                     tw="underline cursor-pointer font-semibold"
                     href="/preboda"
                   >
                     La Previa
                   </a>{' '}
-                  &#127881; cuando tengamos más noticias. &#128540;
+                  &#127881;
                 </p>
                 {/*<a tw="underline cursor-pointer" href="/preboda">
                   Ver información de "La Previa"
@@ -519,6 +518,68 @@ const Home = () => {
                     </a>
                   </li>
                 </ul>
+              </motion.div>
+            )}
+          </div>
+          {/*SEPARACION DE ITEM*/}
+          <div tw="border border-primary-100 shadow-md py-2 rounded-lg w-full hover:ring-2 ring-secondary-200 bg-bg-200">
+            <div
+              tw="px-2 pt-1 flex gap-1"
+              onClick={() => setIsOpen10((prev) => !prev)}
+            >
+              <motion.div>
+                {!isOpen10 ? <AddIcon></AddIcon> : <RemoveIcon></RemoveIcon>}
+              </motion.div>
+              <p tw="text-xl font-bold">Alergias y menús especiales</p>
+            </div>
+
+            {!isOpen10 ? (
+              <div></div>
+            ) : (
+              <motion.div
+                initial={{
+                  height: 0,
+                  opacity: 0,
+                }}
+                animate={{
+                  height: 'auto',
+                  opacity: 1,
+                  transition: {
+                    height: {
+                      duration: 0.4,
+                    },
+                    opacity: {
+                      duration: 0.25,
+                      delay: 0.15,
+                    },
+                  },
+                }}
+                exit={{
+                  height: 0,
+                  opacity: 0,
+                  transition: {
+                    height: {
+                      duration: 0.4,
+                    },
+                    opacity: {
+                      duration: 0.25,
+                    },
+                  },
+                }}
+                className="font-light"
+                tw="ml-10 mt-2"
+              >
+                <p>
+                  Puedes comunicar tus alergias o peticiones de menús especiales
+                  a través del formulario de asistencia que puedes encontrar{' '}
+                  <a
+                    tw="underline cursor-pointer font-semibold"
+                    href="/confirmacion"
+                  >
+                    AQUÍ
+                  </a>
+                  .
+                </p>
               </motion.div>
             )}
           </div>

@@ -12,18 +12,17 @@ const Home = () => {
             <p tw="text-4xl font-bold text-center">La Previa</p>
             <p tw="mt-4">
               Para todos aquellos que quieran ir canlentando antes de la boda,
-              nos juntaremos el
+              nos juntaremos el:
             </p>
-            <p tw="text-2xl font-bold">viernes 29 de agosto de 2025</p>
+            <p tw="text-2xl font-bold">viernes, 29 de agosto de 2025</p>
             <p tw="">Hora:</p>
-            <p tw="text-2xl font-bold"> TBD (por la tarde)</p>{' '}
+            <p tw="text-2xl font-bold">20:00 h</p>
             <p tw="">Lugar:</p>
-            <p tw="text-2xl font-bold">
-              Pinillos de Polendos (al 97,5% seguro)
-            </p>{' '}
+            <p tw="text-2xl font-bold">El Rincón del Tuerto Pirón</p>
+            <p tw="text-2xl font-bold">(Cabañas de Polendos)</p>
             <div tw="my-2 border border-primary-100">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12030.101918763376!2d-4.125804!3d41.079364!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4137197e00e377%3A0x4d126eb39a3d1120!2s40397%20Pinillos%20de%20Polendos%2C%20Segovia!5e0!3m2!1sen!2ses!4v1749055955478!5m2!1sen!2ses"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10118.159933924178!2d-4.116512923219498!3d41.065780483381154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd41379ffb7bb8d3%3A0x12a22d9b614a1e52!2sBar-restaurante%20El%20Rinc%C3%B3n%20del%20Tuerto%20Pir%C3%B3n!5e0!3m2!1ses!2ses!4v1754847193012!5m2!1ses!2ses"
                 width="100%"
                 height="400"
                 loading="lazy"
@@ -31,7 +30,7 @@ const Home = () => {
               ></iframe>
             </div>
             <a
-              href="https://maps.app.goo.gl/3dmxA7VYeFqfDBos7"
+              href="https://maps.app.goo.gl/yyrf5E4nk5ipAyaBA"
               target="_blank"
               rel="noopener noreferrer"
               tw="cursor-pointer px-4 pt-1 rounded-xl bg-primary-300 text-white hover:bg-primary-100"
