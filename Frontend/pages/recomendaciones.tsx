@@ -688,6 +688,23 @@ const Home = () => {
                     </div>
                   </div>
                 </li>
+                <li>
+                  <div tw="flex">
+                    <div>
+                      <p tw="pt-1">Acueducto Rooftop</p>
+                      <p tw="pt-1">(con buenas vistas del acueducto)</p>
+                    </div>
+                    <div tw="px-2  hover:text-blue-800">
+                      <a
+                        href="https://maps.app.goo.gl/G7ATDhKtgoiHn2T16"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <AssistantDirectionIcon fontSize="medium"></AssistantDirectionIcon>
+                      </a>
+                    </div>
+                  </div>
+                </li>
               </ul>
             </div>
             <p tw=""></p>

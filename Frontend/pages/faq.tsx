@@ -203,8 +203,8 @@ const Home = () => {
               >
                 <p>
                   Habrá un autobus para los invitados esperando en la puerta de
-                  finca cuando finalice la fiesta. Realizará dos viajes hasta el
-                  acueducto. El primero a las <b>22:45</b> y otro a las{' '}
+                  finca <u>cuando finalice la fiesta</u>. Realizará dos viajes
+                  hasta el acueducto. El primero a las <b>22:45</b> y otro a las{' '}
                   <b>23:15</b>.
                 </p>
               </motion.div>
@@ -319,8 +319,8 @@ const Home = () => {
                 tw="ml-10 mt-2"
               >
                 <p>
-                  La finca sanciona expresamente el uso de arroz o confeti, por
-                  lo que os pedimos que os abstengais de tirarlos.
+                  No. La finca sanciona expresamente el uso de arroz o confeti,
+                  por lo que os pedimos que os abstengais de tirarlos.
                 </p>
                 <p>
                   No os preocupéis, se proporcionará munición adecuada para
